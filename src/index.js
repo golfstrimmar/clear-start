@@ -1,8 +1,11 @@
-// import './js/jquery'
-import $ from 'jquery';
+import './js/jquery'
+// import "./js/bootstrap.bundle";
+// import "./js/bootstrap";
+// import $ from 'jquery';
 // import './css/main.css';
+import './css/bootstrap-grid.css';
 import './scss/style.scss';
-import "slick-carousel"; 
+// import "slick-carousel"; 
 // import "mixitup";
 // import "./js/sliMy.js";
 // import 'vue'
