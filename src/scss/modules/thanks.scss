@@ -1,0 +1,565 @@
+.thanks__body {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(38, 43, 63, 1) 0%,
+    #262b3f 100%
+  );
+  width: 100%;
+  height: 100%;
+  position: relative;
+ padding: 2% 0% 0% 0%;
+ overflow: hidden;
+ @media (min-width:0px) and (max-width:$media4) {  .bg{
+  width: 100%;
+  height: 30%;
+  top: 0;
+  left: 0;
+} } 
+ .container{
+
+  @media (min-width: 801px) and (max-width:840px) {   
+width: 650px;
+
+     }
+  @media (min-width: 500px) and (max-width:$media) {   
+width: 500px;
+
+     }
+   @media (min-width: 0px) and (max-width:500px) {   
+     width: 100%; 
+    padding-left: 15px ;
+    padding-right: 15px ;
+      }
+
+
+ }
+
+}
+
+.thcontent__body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 5% 10% 12% 8.7%;
+  @include jucs();
+  
+  @media (min-width: $media+1px) and (max-width: 1140px) {
+    padding: 3% 10% 12% 8.7%;
+
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    padding: 0% 0% 0% 0%;
+    min-height: 908px;
+    @include fdc();
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+.thcontent__title {
+  font-family: Montserrat-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  padding: 0% 0% 6.5% 0%;
+  @media (min-width: $media+1px) and (max-width: 1140px) {
+    font-size: 20px;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    font-size: 16px;
+    font-family: Montserrat;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    padding: 0% 0% 6.5% 7%;
+  }
+}
+.thcontent__text1 {
+  // Мы уже получили ваш запрос, и в ближайшее время с вами свяжется наш специалист
+  // img(src="assets/img/thanks/svg-thanks-5.svg",alt="img")
+  flex: 0 1 60%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 0% 0% 6% 5%;
+  position: relative;
+  @media (min-width: $media+1px) and (max-width: 1140px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    font-size: 12px;
+    padding: 0% 0% 0% 0%;
+    line-height: 15px;
+    padding: 0% 15% 6% 0%;
+  }
+  img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    @media (min-width: $media+1px) and (max-width: 1140px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      display: none;
+    }
+  }
+}
+.thcontent__text2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  padding: 0% 0% 4.3% 5%;
+  flex: 0 1 60%;
+  @media (min-width: $media+1px) and (max-width: 1140px) {
+    font-size: 12px;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    // padding: 84% 0 4.3% 0%;
+    padding: 243px 0px 20px 0px;
+
+    font-size: 12px;
+  }
+  // Чтобы сократить ваше ожидание, пока мы подготавливаем для вас информацию,
+  span {
+    // предлагаем вам:
+    font-family: Montserrat-SemiBold;
+  }
+}
+
+.thcontent__links {
+  flex: 0 1 71%;
+  padding: 0% 0% 5% 5%;
+  @media (min-width: $media) and (max-width: 1140px) {
+    flex: 0 1 100%;
+  }
+}
+
+.thl {
+  .thl__body {
+    @include jucs();
+    .thl__column {
+      flex: 0 1 50%;
+      @include jucs();
+      @media (min-width: 0px) and (max-width: $media) {
+        flex: 0 1 100%;
+      }
+
+      &:last-child {
+        padding: 17% 0% 0% 0%;
+      }
+
+      .thl__title {
+        flex: 0 1 63%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #ffffff;
+        opacity: 0.8;
+        @media (min-width: $media+1px) and (max-width: 1140px) {
+          font-size: 14px;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          font-size: 12px;
+        }
+        // Познакомиться с нами в соц. сетях
+      }
+      .thl__phone {
+        position: absolute;
+        top: 58.5%;
+        left: 13%;
+        @media (min-width: 1141px) and (max-width: 1380px) {
+          width: 49px;
+          height: 50px;
+          top: 60%;
+        }
+        @media (min-width: $media+1px) and (max-width: 1140px) {
+          top: 53%;
+          width: 49px;
+          height: 50px;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          top: 54.5%;
+          left: 5%;
+
+        }
+      }
+      .thl__juno {
+        position: relative;
+        position: absolute;
+        top: 60%;
+        left: 20%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #ffffff;
+        opacity: 0.6;
+        padding: 0% 0% 0% 5%;
+        height: 30px;
+        @include anim(0.2s);
+        &:hover{
+        transform: scale(1.1);
+          } 
+        @media (min-width: 1141px) and (max-width: 1380px) {
+          top: 61%;
+        }
+        @media (min-width: $media+1px) and (max-width: 1140px) {
+          top: 55%;
+          padding: 0% 0% 0% 7%;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          top: 56%;
+          left: 36%;
+          padding: 0% 0% 0% 20%;
+        }
+        img {
+          position: absolute;
+          width: 44px;
+          height: 44px;
+          top: 20%;
+          left: 0%;
+          transform: translate(0%, -50%);
+        }
+      }
+      .thl__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 140%;
+        color: #ffffff;
+        opacity: 0.6;
+        // Подпишитесь на наш Instagram.Мы постоянно проводим акции для наших подписчиков
+        padding: 23.5% 3.5% 0% 25.8%;
+        @media (min-width: 1141px) and (max-width: 1380px) {
+          padding: 50% 3.5% 0% 25.8%;
+          font-size: 10px;
+        }
+        @media (min-width: $media+1px) and (max-width: 1140px) {
+          padding: 40% 3.5% 0% 25.8%;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          padding: 34.5% 3.5% 0 32.8%;
+          font-size: 10px;
+
+        }
+      }
+    }
+    .thl__icons {
+      @include alic();
+      height: 50px;
+      flex: 0 1 100%;
+      @media (min-width: $media) and (max-width: 1140px) {
+      }
+
+      .thl__icon {
+        @include alic();
+        margin-right: 20px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+          @include anim(0.2s);
+&:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+        img {
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+        }
+
+        @media (min-width: $media) and (max-width: 1140px) {
+          width: 35px;
+          height: 35px;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .th-viber {
+        width: 45px;
+        height: 45px;
+        @media (min-width: $media+1px) and (max-width: 1140px) {
+          width: 40px;
+          height: 40px;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          width: 44px;
+          height: 44px;
+        }
+      }
+    }
+  }
+}
+
+.thcontent__button {
+  // Вернуться на главную
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+  flex: 0 1 100%;
+  padding: 0% 0% 0% 5%;
+  position: relative;
+  text-decoration: underline;
+  @media (min-width: $media+1px) and (max-width: 1140px) {
+    font-size: 14px;
+  }
+
+  
+  @media (min-width: 0px) and (max-width: $media) {
+    margin: 11% 0% 0% 0%;
+    padding: 0% 0% 0% 15%; font-size: 14px;
+    text-decoration: none;
+  }
+  a {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    @media (min-width: $media+1px) and (max-width: 1140px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.thanks {
+  
+  .designers__vika {
+    position: relative;
+    position: absolute;
+    top: 16%;
+    left: 62.5%;
+    width: 268px;
+height: 432px;
+.bg{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+    @media (min-width: $media+1px) and (max-width: 1140px) {
+      width: 194px;
+      height: 311px;
+      top: 14%;
+      left: 75%;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      width: 127px;
+      height: 205px;
+      top: 12%;
+      left: 51%;
+    }
+  
+  .designers__colos {
+    position: relative;
+   
+    position: absolute;
+    width: 247px;
+    height: 52px;
+   top: 95.8%;
+left: 8%;
+   @include center(); 
+    z-index: 2;
+    img {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+          }
+          p {
+            position: relative;
+            z-index: 2;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #ffffff;
+
+          }
+    @media (min-width: 1141px) and (max-width: 1770px) {
+    width: 200px;
+      height: 45px;
+// top: 63%;
+// left: 65%; 
+p{
+      font-size: 14px;
+    }
+  }
+    @media (min-width: $media+1px) and (max-width: 1140px) {
+      width: 184px;
+      height: 45px;
+      // top: 65%;
+      // left: 81%;
+p{
+      font-size: 14px;
+    }
+
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      width: 170px;
+      height: 33px;
+      // top: 30%;
+      // left: 8%;
+        top: 71.8%;
+left: -100%; 
+p{
+      font-size: 9px;
+    }
+
+    }
+
+
+  
+  .designers__discription {
+     position: relative;
+    position: absolute;
+    z-index: -1;
+    width: 256px;
+    height: 67px;
+    top: 80%;
+    left: 20.3%;
+    padding: 0% 2.3%;
+@include center();
+   img {
+              position: absolute;
+              top: 0%;
+              left: 0%;
+              width: 100%;
+              height: 100%;
+            }
+            p {
+              position: relative;
+              z-index: 2;
+              @include Text-Style-19;
+              text-align: center;
+            }
+
+     @media (min-width: 1141px) and (max-width: 1770px) {
+   width: 184px;
+      height: 45px;
+// top: 68%;
+// left: 70%;
+      p{
+      font-size: 11px;
+      line-height: 1;
+
+    }
+  }
+    @media (min-width: $media+1px) and (max-width: 1140px) {
+      width: 184px;
+      height: 45px;
+      // top: 71%;
+      // left: 85%;
+       p{
+      font-size: 11px;
+      line-height: 1;
+
+    }
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      // top: 33.3%;
+      // left: 18.3%;
+      width: 179px;
+      height: 40px;
+        p{
+      font-size: 9px;
+      line-height: 1;
+
+    }
+    }
+  }
+}
+
+}
+
+}
+
+.thcontent__faid {
+  position: absolute;
+ top: 59%;
+    left: 60%;
+ width: 384px;
+    height: 150px;
+img{
+  width: 100%;
+  height: 100%;
+}
+ @media (min-width: 1141px) and (max-width: 1770px) {
+  top: 49%;
+left: 60%;
+width: 384px;
+height: 222px;
+  }
+
+  @media (min-width: $media+1px) and (max-width: 1140px) {
+   width: 200px;
+height: 96px;
+top: 51%;
+left: 78%;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+  width: 200px;
+height: 102px;
+top: 25%;
+left: 42%;
+  }
+}
+.thcontent__decor1 {
+  position: absolute;
+  top: 51%;
+  left: 7.5%;
+  @media (min-width: 0px) and (max-width: $media) {
+    top: 72%;
+    left: 66.5%;
+  }
+}
+.thcontent__decor2 {
+  position: absolute;
+  top: 50.5%;
+  left: 55%;
+  @media (min-width: 0px) and (max-width: $media) {
+    top: 45%;left: 65%;
+  }
+}
+.thcontent__decor3 {
+  position: absolute;
+  top: 25.5%;
+  left: 59%;
+  @media (min-width: 0px) and (max-width: $media) {
+    top: 10.5%;
+    left: 39%;
+    width: 55px;
+  } 
+}

@@ -1,0 +1,244 @@
+.create-pro {
+  background: #262b3f;
+  
+  &__body {
+    position: relative;
+    @include jucc();
+    width: 100%;
+    height: 100%;
+    padding: 3% 0% 3% 0%;
+
+    @media (min-width: 1101px) and (max-width: 1350px) {
+      padding: 3% 0% 22% 0%;
+    }
+    @media (min-width: 1101px) and (max-width: 1110px) {
+      padding-bottom: 36%;
+    }
+    @media (min-width: 1101px) and (max-width: 1110px) {
+      padding-bottom: 36%;
+    }
+    @media (min-width: $media+1px) and (max-width: 1100px) {
+      padding-bottom: 500px;
+    }
+
+   
+  }
+
+  &__content {
+    flex: 0 1 100%;
+    padding: 4.5% 0% 0% 0%;
+    @media (min-width: 0px) and (max-width:$media) {  
+      min-height: 520px; 
+      overflow: hidden;
+        }
+  }
+
+ 
+}
+
+.content-create-pro {
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 269px;
+    
+  }
+  &__item {
+  }
+}
+
+// ------------------------------------------------
+.tiny-create-pro {
+  width: 232px;
+  height: 269px;
+  position: absolute;
+  z-index: 5;
+  top: 0%;
+
+  @include anim(0.2s);
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:nth-child(1) {
+    left: 0%;
+  }
+  &:nth-child(2) {
+    left: 16%;
+  }
+  &:nth-child(3) {
+    left: 32%;
+  }
+  &:nth-child(4) {
+    left: 48%;
+  }
+  &:nth-child(5) {
+    left: 64%;
+  }
+  &:nth-child(6) {
+    left: 80%;
+  }
+
+  @media (min-width: 1101px) and (max-width: 1350px) {
+    &:nth-child(1) {
+      left: 0%;
+    }
+    &:nth-child(2) {
+      left: 18%;
+    }
+    &:nth-child(3) {
+      left: 36%;
+    }
+    &:nth-child(4) {
+      left: 36%;
+      top: 80%;
+    }
+    &:nth-child(5) {
+      left: 54%;
+      top: 80%;
+    }
+    &:nth-child(6) {
+      left: 72%;
+      top: 80%;
+    }
+  }
+
+  @media (min-width: $media+1px) and (max-width: 1100px) {
+    &:nth-child(1) {
+      left: 22%;
+    }
+    &:nth-child(2) {
+      left: 49%;
+    }
+    &:nth-child(3) {
+      left: 22%;
+      top: 80%;
+    }
+    &:nth-child(4) {
+      left: 49%;
+      top: 80%;
+    }
+    &:nth-child(5) {
+      left: 22%;
+      top: 160%;
+    }
+    &:nth-child(6) {
+      left: 49%;
+      top: 160%;
+    }
+  }
+  @media (min-width: 250px) and (max-width: $media) {
+    &:nth-child(1) {
+      left: 50%;
+      transform: translate(-69%);
+    }
+    &:nth-child(2) {
+      left: 50%;
+      transform: translate(-11%);
+    }
+    &:nth-child(3) {
+      left: 50%;
+      top: 55%;
+      transform: translate(-69%);
+    }
+    &:nth-child(4) {
+      left: 50%;
+      top: 55%;
+      transform: translate(-11%);
+    }
+    &:nth-child(5) {
+      left: 50%;
+      top: 110%;
+      transform: translate(-69%);
+    }
+    &:nth-child(6) {
+      left: 50%;
+      top: 110%;
+      transform: translate(-11%);
+    }
+  }
+
+  &__body {
+    position: relative;
+    @include jucs();
+    width: 232px;
+    height: 280px;
+    padding: 50px 0px 0px 27px;
+
+    @media screen and (max-width: 800px) {
+      padding: 32px 0 0 37px;
+      width: 200px;
+      height: 195px;
+      overflow: hidden;
+    }
+
+    z-index: 3;
+
+    .create-pro-img {
+      position: absolute;
+      top: -6%;
+      left: -24%;
+      width: 232px;
+      height: 285px;
+      z-index: -2;
+
+      @media screen and (max-width: 800px) {
+        top: 3%;
+        left: -8%;
+        width: 162px;
+        height: 169px;
+      }
+
+      .bg {
+        width: 127%;
+        height: 110%;
+        left: 10%;
+        @media screen and (max-width: 800px) {
+          width: 114%;
+          height: 112%;
+        }
+      }
+    }
+  }
+  &__title {
+    flex: 0 1 62%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    color: #ffffff;
+    @media screen and (max-width: 800px) {
+      font-size: 9px;
+    }
+  }
+  &__icon {
+    position: relative;
+
+    position: absolute;
+    width: 164px;
+    height: 190px;
+    @media screen and (max-width: 800px) {
+      width: 100px;
+      height: 120px;
+      bottom: 12px;
+      left: 64px;
+    }
+
+    bottom: 7px;
+    left: 69px;
+
+    z-index: 3;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      @media screen and (max-width: 800px) {
+        border-radius: 4px;
+      }
+    }
+  }
+}

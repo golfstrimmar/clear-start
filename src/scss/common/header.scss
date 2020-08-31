@@ -1,0 +1,518 @@
+.header {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 4;
+
+  @media (min-width: 550px) and (max-width: 850px) {
+    .header1-slide {
+      left: 0% !important;
+    }
+  }
+
+  &__body {
+    position: relative;
+    @include jucs();
+    @include alic();
+    padding: 1.2% 0%;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: 550px) {
+      padding-top: 6%;
+      padding-bottom: 6%;
+    }
+
+    .header1-slide {
+      @media screen and (max-width: 840px) {
+        top: 241%;
+        left: -237.5%;
+      }
+    }
+  }
+
+  &__tel {
+    margin: 0 0 0 9px;
+  }
+
+  &__logo {
+    flex: 0 1 75px;
+    @include jucs();
+
+    @media (min-width: 551px) and (max-width: 1640px) {
+      margin: 0% auto 0% 0%;
+    }
+
+    @media screen and (max-width: 550px) {
+      img {
+        height: 30px;
+      }
+      flex: 0 1 30px;
+      margin: 0% 0% 0% 0%;
+    }
+  }
+  &__discription {
+    @include Text-Style-1;
+    opacity: 0.8;
+    flex: 0 1 30%;
+    margin: 0% 3% 0% 2.1%;
+    @media screen and (max-width: 1640px) {
+      display: none;
+    }
+  }
+
+  // ---------------------------------------------------------
+  .header1__burger {
+    margin: 0% 0% 0% 13.6%;
+
+    @media (min-width: 550px) and (max-width: 1900px) {
+      margin: 0% 0% 0% 2%;
+    }
+
+    @media screen and (max-width: 550px) {
+      order: 1;
+      margin: 0% 0% 0% auto;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .icon-menu-1 {
+      width: 30px;
+      height: 30px;
+
+      span {
+        position: absolute;
+        background-color: #ffffff;
+        z-index: 2;
+        width: 12px;
+        height: 2px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+
+        &:nth-child(1) {
+          top: 10px;
+        }
+        &:nth-child(2) {
+          width: 8px;
+          top: 15px;
+          left: 58%;
+        }
+        &:nth-child(3) {
+          top: 20px;
+        }
+      }
+
+      &:hover {
+        span {
+          &:nth-child(2) {
+            width: 75%;
+            top: 15px;
+            left: 50%;
+          }
+        }
+      }
+    }
+
+    .icon-menu-1-active {
+      span {
+        &:nth-child(2) {
+          width: 75%;
+          top: 15px;
+          left: 50%;
+        }
+      }
+    }
+  }
+
+  .header1__text {
+    @media screen and (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  &__icons {
+    flex: 0 1 10%;
+    margin: 0% auto 0% 6%;
+    @media (min-width: 1900px) and (max-width: 1916px) {
+      flex: 0 1 10%;
+      margin: 0% auto 0% 6%;
+    }
+
+    @media (min-width: 550px) and (max-width: 1640px) {
+      margin: 0% 2% 0% 2%;
+      min-width: 100px;
+      margin: 0% auto 0% 6%;
+    }
+
+    @media screen and (max-width: 550px) {
+      min-width: 70px !important;
+      margin: 0% 1% 0% 6%;
+    }
+  }
+
+  // -------------------------
+  .header-icons {
+    &__body {
+      @media screen and (max-width: 550px) {
+        img {
+          height: 30px;
+        }
+      }
+    }
+    .tel {
+      margin: 0px 7px 0px 0px;
+    }
+  }
+
+  // -------------------------------------------------------------------
+  .header-tel {
+    &__phone {
+      @include Text-Style-2;
+      @media screen and (max-width: 550px) {
+        font-size: 12px;
+      }
+    }
+    &__text {
+      @include juce();
+
+      span {
+        @include Text-Style-1;
+        opacity: 0.8;
+        border-bottom: 1px dotted;
+        @media screen and (max-width: 550px) {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
+// ===============================================================
+// -------------------------create
+
+.create__wrapper {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  background: #262b3f;
+  @media (min-width: 0px) and (max-width: 700px) {
+    .bg {
+      width: 100%;
+      height: 314px;
+      top: 28%;
+      left: 12%;
+    }
+  }
+
+  .container {
+    @media (min-width: 0px) and (max-width: 1098px) {
+      width: 100%;
+    }
+  }
+
+  .create__body {
+    width: 100%;
+    height: 100%;
+    @include jucs();
+    padding-top: 222px;
+
+    @media (min-width: $media4+1px) and (max-width: 1098px) {
+      padding-top: 180px;
+    }
+    @media (min-width: 0px) and (max-width: $media4) {
+      padding-top: 140px;
+    }
+
+    h2.create__title {
+      font-family: Montserrat-SemiBold;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 156.7%;
+      color: #ffffff;
+      // Создадим дизайнерскую мебель,
+      flex: 0 1 100%;
+
+      @media (min-width: 1099px) and (max-width: 1377px) {
+        font-size: 22px;
+      }
+      @media (min-width: 701px) and (max-width: 1098px) {
+        font-size: 18px;
+      }
+      @media (min-width: $media4+1px) and (max-width: 700px) {
+        font-size: 18px;
+      }
+      @media (min-width: 0px) and (max-width: $media4) {
+        font-size: 16px;
+        line-height: 156.7%;
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .create__text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 141%;
+      color: #ffffff;
+      opacity: 0.8;
+      position: relative;
+      padding: 0% 0% 0% 5%;
+      flex: 0 1 100%;
+      margin: 5% 0% 0% 0%;
+      @media (min-width: 701px) and (max-width: 1377px) {
+        font-size: 16px;
+        padding: 0px 0px 0px 50px;
+      }
+      @media (min-width: $media4) and (max-width: 700px) {
+        font-size: 12px;
+        padding: 0px 0px 0px 50px;
+      }
+      @media (min-width: 0px) and (max-width: $media4) {
+        font-size: 12px;
+        line-height: 141%;
+        padding: 0px 0px 0px 30px;
+        margin: 6% 0% 0% 0%;
+      }
+      img {
+        position: absolute;
+        left: 0%;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        transform: translate(0%, -50%);
+        @media (min-width: 0px) and (max-width: $media4) {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    .create__button {
+      position: relative;
+      // flex: 0 1 100%;
+      margin: 8.5% 0% 0% 0%;
+      width: 360px;
+      height: 78px;
+      @include jucs();
+      @media (min-width: 1099px) and (max-width: 1377px) {
+        margin: 10% 0% 0% 0%;
+        width: 284px;
+        height: 58px;
+      }
+      @media (min-width: 701px) and (max-width: 1098px) {
+        margin: 10% 0% 0% 0%;
+        width: 240px;
+        height: 52px;
+      }
+
+      @media (min-width: $media4+1px) and (max-width: 700px) {
+        margin: 30% 0% 0% 0%;
+        width: 240px;
+        height: 52px;
+      }
+
+      @media (min-width: 0px) and (max-width: $media4) {
+        margin: 60% 0% 0% 0%;
+        width: 240px;
+        height: 52px;
+      }
+      .button-color {
+        @media (min-width: $media4+1px) and (max-width: 1377px) {
+          width: 284px;
+          height: 58px;
+        }
+
+        @media (min-width: 0px) and (max-width: $media4) {
+          width: 240px;
+          height: 52px;
+          margin: 35% 0% 0% 0%;
+        }
+
+        a.button-color__link {
+          span {
+            @media (min-width: 0px) and (max-width: 1377px) {
+              font-size: 14px;
+            }
+            // Обсудить проект
+          }
+        }
+      }
+
+      img {
+        position: absolute;
+        // width: 100%;
+        // height: 100%;
+        top: -87%;
+        left: 74%;
+
+        @media (min-width: $media4+1px) and (max-width: 1377px) {
+          width: 70px;
+        }
+        @media (min-width: 0px) and (max-width: $media4) {
+          width: 50px;
+          top: 42px;
+          left: 81%;
+        }
+      }
+      .create__text1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        position: absolute;
+        width: 260px;
+        height: auto;
+        top: 50%;
+        left: 400px;
+        transform: translate(0%, -50%);
+        @media (min-width: 501px) and (max-width: 1290px) {
+          font-size: 12px;
+          left: 150px;
+          // left: 20%;
+          top: 100px;
+        }
+        @media (min-width: 0px) and (max-width: 500px) {
+          font-size: 10px;
+          left: 20%;
+          top: 172px;
+          line-height: 12px;
+        }
+      }
+    }
+
+    .content-create__player {
+      position: absolute;
+      top: 195px;
+      left: 700px;
+      width: 427px;
+      height: 427px;
+      @media (min-width: 1099px) and (max-width: 1377px) {
+        width: 350px;
+        height: 350px;
+        top: 25%;
+        left: 65%;
+      }
+      @media (min-width: 701px) and (max-width: 1098px) {
+        top: 50%;
+        left: 55%;
+        width: 250px;
+        height: 250px;
+      }
+
+      @media (min-width: $media4+1px) and (max-width: 700px) {
+        top: 60%;
+        left: 55%;
+        width: 200px;
+        height: 200px;
+      }
+      @media (min-width: 0px) and (max-width: $media4) {
+        width: 35vw;
+        height: 35vw;
+        top: 360px;
+        left: 26%;
+      }
+
+      .player__body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .player__text {
+          position: absolute;
+          width: 170px;
+          height: 52px;
+          top: 62%;
+          left: 14%;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: right;
+          color: #ffffff;
+          // От звонка до установки мебели. Покажем за 4 мин
+          @media (min-width: 701px) and (max-width: 1098px) {
+            font-size: 12px;
+            top: 62%;
+            left: -30%;
+          }
+
+          @media (min-width: 501px) and (max-width: 700px) {
+            font-size: 12px;
+            top: 20%;
+            left: -50%;
+          }
+
+          @media (min-width: 0px) and (max-width: 500px) {
+            font-size: 8px;
+            line-height: 10px;
+            font-size: 9px;
+            top: 10%;
+            left: -80px;
+            width: 100px;
+          }
+        }
+
+        a.player__triangle {
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          top: 50%;
+          left: 50%;
+          z-index: 2;
+          transform: translate(-50%, -50%);
+          img {
+            @include anim(0.2s);
+          }
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
+          @media (min-width: $media4+1px) and (max-width: 1377px) {
+            width: 25px;
+            height: 25px;
+          }
+          @media (min-width: 0px) and (max-width: $media4) {
+            width: 9px;
+            height: 9px;
+          }
+        }
+        .player__arc {
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          &_big {
+            @include anim(0.5s);
+            left: 93%;
+            top: 55.5%;
+            @media (min-width: $media4+1px) and (max-width: 1377px) {
+              left: 69%;
+              top: 13%;
+              width: 53%;
+              height: 15%;
+            }
+            @media (min-width: 0px) and (max-width: $media4) {
+              left: 69%;
+              top: 11.2%;
+              width: 55%;
+              height: 15%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

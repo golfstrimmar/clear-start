@@ -1,0 +1,556 @@
+.link__wrapper {
+  position: relative;
+}
+.link__body {
+  width: 100%;
+  height: 100%;
+  padding: 5% 0% 14.7% 0%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(38, 43, 63, 0.94) 0%,
+    #262b3f 100%
+  );
+  min-height: 1190px;
+  overflow: hidden;
+  @media (min-width: $media+1px) and (max-width: 1186px) {
+    min-height: 1100px;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    min-height: 1094px;
+    max-height: 1094px;
+    padding: 5% 0% 0% 0%;
+    // width: 300px;
+  }
+}
+h2.link__title {
+  font-family: Montserrat-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+  // Давайте воплощать проекты вместе
+  @media (min-width: $media+1px) and (max-width: 1186px) {
+    font-size: 24px;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+.link__discription {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding: 1.7% 24% 0% 24%;
+  @media (min-width: 1187px) and (max-width: 1698px) {
+    padding: 1.7% 15% 0% 15%;
+  }
+  @media (min-width: $media+1px) and (max-width: 1186px) {
+    font-size: 24px;
+    padding: 1.7% 0% 0% 0%;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    padding: 25px 0px 0px 0px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  // Знаем, что вы уделяете внимание каждой детали, стремитесь к совершенству в каждом дизайн-проекте
+}
+.link__content {
+  padding: 5% 0% 0% 0%;
+
+  @media (min-width: 0px) and (max-width: $media) {
+    padding: 5% 0% 0% 0%;
+    max-height: 800px;
+  }
+}
+
+.link-content__body {
+  @include jucb();
+  max-height: 400px;
+}
+
+// --------------------------------------------
+.link-content__column {
+  flex: 0 1 50%;
+  @include jucc();
+
+  @media (min-width: 0px) and (max-width: $media) {
+    flex: 0 1 100%;
+    max-height: 400px;
+  }
+}
+.link-content__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.7;
+  flex: 0 1 80%;
+  @media (min-width: $media+1px) and (max-width: 1186px) {
+    font-size: 14px;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    flex: 0 1 100%;
+    padding: 0% 25% 0% 5%;
+  }
+}
+
+// ---------------------------
+.link-content__column {
+  &:last-child {
+    flex: 0 1 41.5%;
+
+    @media (min-width: 1191px) and (max-width: 1770px) {
+      flex: 0 1 41.5%;
+    }
+    @media (min-width: $media+1px) and (max-width: 1190px) {
+      flex: 0 1 290px;
+    }
+
+    @media (min-width: 0px) and (max-width: $media) {
+      flex: 0 1 100%;
+      margin: 260px 0px 0px 0px;
+      z-index: 3;
+      position: relative;
+    }
+
+    .link-content__text {
+      flex: 0 1 60%;
+      @media (min-width: 0px) and (max-width: $media) {
+        font-size: 10px;
+        line-height: 12px;
+        flex: 0 1 100%;
+        width: 100%;
+        text-align: center;
+        padding: 0% 0% 0% 0%;
+        z-index: 3;
+      }
+    }
+
+    .cont-column__body {
+      width: 100%;
+      height: 100%;
+      @include jucc();
+      background: #363c52;
+      box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      padding: 11% 8% 12% 8%;
+      margin: 8% 0% 0% 0%;
+      @media (min-width: 0px) and (max-width: $media) {
+        width: 308px;
+        height: 497px;
+        padding: 38px 0px 0px 0px;
+        @include fdc();
+        @include alic();
+        @include jucs();
+      }
+    }
+
+    .cont-column__title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      // Давайте знакомиться
+      @media (min-width: 1191px) and (max-width: 1770px) {
+        font-size: 20px;
+        text-align: center;
+      }
+      @media (min-width: $media+1px) and (max-width: 1190px) {
+        font-size: 20px;
+      }
+      @media (min-width: 0px) and (max-width: $media) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    .cont-column__discription {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 26px;
+      color: #ffffff;
+      text-align: center;
+      opacity: 0.7;
+      padding: 6% 0% 0% 0%;
+      // После отправки данных мы свяжемся с вами в течение 3-х минут
+
+      @media (min-width: $media+1px) and (max-width: 1190px) {
+        font-size: 16px;
+      }
+      @media (min-width: 0px) and (max-width: $media) {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 5% 17% 0% 17%;
+      }
+    }
+
+    .cont-column__form {
+      @include jucc();
+      margin: 7% 0% 0% 0%;
+      @media (min-width: 0px) and (max-width: $media) {
+        width: 100%;
+        margin: 1% 0% 0% 0%;
+      }
+      .cont-column__in {
+        flex: 0 1 100%;
+        height: 75px;
+        border-radius: 100px;
+        position: relative;
+        margin: 0% 0% 4.8% 0%;
+        position: relative;
+        @media (min-width: $media+1px) and (max-width: 1190px) {
+          height: 53px;
+          flex: 0 1 100%;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          width: 238px;
+          height: 53px;
+          margin: 4% 0% 2% 0%;
+        }
+
+        input {
+          position: absolute;
+          // z-index: 500;
+          width: 100%;
+          height: 100%;
+          top: 0%;
+          left: 0%;
+          border-radius: 100px;
+          background: #262b3f;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #ffffff;
+          opacity: 0.6;
+          padding: 0% 0% 0% 24%;
+          @include anim(0.2s);
+
+          @media (min-width: $media+1px) and (max-width: 1190px) {
+            font-size: 12px;
+          }
+          @media (min-width: 0px) and (max-width: $media) {
+            width: 238px;
+            height: 53px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            line-height: 12px;
+            padding: 0% 0% 0% 20%;
+          }
+        }
+        img {
+          position: absolute;
+          width: 45px;
+          height: 45px;
+          top: 50%;
+          left: 20px;
+          transform: translate(0%, -50%);
+          @media (min-width: $media+1px) and (max-width: 1190px) {
+            width: 35px;
+            height: 35px;
+          }
+          @media (min-width: 0px) and (max-width: $media) {
+            width: 32px;
+            height: 32px;
+            left: 49px;
+          }
+        }
+      }
+
+      .cont-column__button {
+        position: relative;
+        @include anim(0.2s);
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          height: 53px;
+          margin: 4% 0% 0% 0%;
+        }
+        .button-color {
+          @media (min-width: $media+1px) and (max-width: 1190px) {
+            width: 260px;
+            height: 53px;
+          }
+          @media (min-width: 0px) and (max-width: $media) {
+            width: 238px;
+            height: 53px;
+          }
+        }
+
+        input {
+          position: absolute;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          top: 0%;
+          left: 0%;
+          background: linear-gradient(101.88deg, #e74063 0%, #755cdb 100%);
+          box-shadow: 0px 0px 30px rgba(180, 77, 154, 0.4);
+          border-radius: 100px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 141%;
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: #ffffff;
+          @media (min-width: $media) and (max-width: 1190px) {
+            font-size: 14px;
+          }
+          @media (min-width: 0px) and (max-width: $media) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .cont-column__confidence {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+      opacity: 0.8;
+      text-align: center;
+      flex: 0 1 67%;
+      padding: 5% 0% 0% 0%;
+      @media (min-width: $media+1px) and (max-width: 1190px) {
+        flex: 0 1 100%;
+        padding: 8% 0% 0% 0%;
+      }
+      @media (min-width: 0px) and (max-width: $media) {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 3.5% 2% 0% 2%;
+        max-height: 50px;
+      }
+      span {
+        color: #5f518f;
+        opacity: 1;
+      }
+    }
+    .cont-column__social {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.7;
+      padding: 8% 0% 0% 0%;
+      //  Или напишите нам напрямую удобным вам способом
+      @media (min-width: $media+1px) and (max-width: 1190px) {
+        font-size: 16px;
+      }
+      @media (min-width: 0px) and (max-width: $media) {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 6% 14% 0% 14%;
+      }
+    }
+
+    .cont-column__icons {
+      padding: 8% 0% 0% 0%;
+      @include jucb();
+      flex: 0 1 84%;
+
+      @media (min-width: $media+1px) and (max-width: 1190px) {
+        flex: 0 1 100%;
+      }
+      @media (min-width: 0px) and (max-width: $media) {
+        padding: 7% 4%;
+        max-height: 40px;
+        flex: 0 1 11%;
+        margin: 0% 0% 0% 0%;
+      }
+
+      a.icon-link {
+        @include anim(0.2s);
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+
+        @media (min-width: $media+1px) and (max-width: 1190px) {
+          width: 40px;
+        }
+        @media (min-width: 0px) and (max-width: $media) {
+          width: 40px;
+          max-height: 40px;
+          margin-right: 15px;
+        }
+      }
+
+      img.ua {
+        width: 60px;
+        height: 60px;
+        @media (min-width: 0px) and (max-width: 1190px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+.link-content__team {
+  position: relative;
+  position: absolute;
+  width: 67.5%;
+  padding: 0 0 39%;
+  top: 25.8%;
+  left: -8%;
+  overflow: hidden;
+
+  @media (min-width: 1191px) and (max-width: 1770px) {
+    width: 567px;
+    top: 25.8%;
+    left: 0;
+    padding: 0 0 366px;
+  }
+
+ 
+  @media (min-width: $media+1px) and (max-width: 1190px) {
+    width: 380px;
+    top: 25.8%;
+    left: -2%;
+    padding: 0 0 240px;
+  }
+
+  @media (min-width: 0px) and (max-width: $media) {
+    top: 15%;
+    width: 318px;
+    max-height: 212px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 0 212px 0;
+  }
+}
+
+.link-content__shadow {
+  position: relative;
+  position: absolute;
+  height: 300px;
+  padding: 0 0 11%;
+  left: -2%;
+  width: 100%;
+  top: 45%;
+
+  @media (min-width: $media) and (max-width: 1770px) {
+    padding: 0 0 40%;
+    left: -2%;
+    top: 41%;
+    height: 200px;
+    width: 100%;
+  }
+
+
+  @media (min-width: 0px) and (max-width: $media) {
+    padding: 0 0 40%;
+    left: 0;
+    top: 13%;
+    width: 323px;
+    height: 250px;
+  }
+}
+
+.link-content__your {
+  position: relative;
+  position: absolute;
+  left: 19%;
+  top: 62%;
+  width: 280px;
+  height: 52px;
+  z-index: 2;
+  @include center();
+
+  @media (min-width: 1191px) and (max-width: 1844px) {
+    width: 243px;
+    height: 45px;
+    left: 13.4%;
+    top: 56.8%;
+  }
+ 
+
+  @media (min-width: $media+1px) and (max-width: 1190px) {
+    width: 200px;
+    height: 38px;
+    left: 13.4%;
+    top: 46%;
+  }
+  @media (min-width: 0px) and (max-width: $media) {
+    width: 200px;
+    height: 38px;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%);
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b3f;
+    opacity: 0.7;
+    @media (min-width: $media+1px) and (max-width: 1186px) {
+      font-size: 14px;
+    }
+    @media (min-width: 0px) and (max-width: $media) {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}
+
+.link-content__decor1 {
+  position: relative;
+  position: absolute;
+  left: 99%;
+  top: 20%;
+  width: 65px;
+  height: 69px;
+  @media (min-width: 0px) and (max-width: 1000px) {
+    left: 40%;
+    top: 70%;
+  }
+}
+.link-content__decor2 {
+  position: relative;
+  position: absolute;
+  left: 2%;
+  top: 20%;
+  width: 65px;
+  height: 69px;
+}

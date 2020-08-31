@@ -1,0 +1,36 @@
+﻿важно что шрифты работают так:
+подключение 
+
+@font-face {
+font-family: Geometria;
+src:
+local(Geometria-Regular),
+url('/assets/fonts/Geometria-Regular.woff') format('woff'),
+url('/assets/fonts/Geometria-Regular.ttf') format('truetype'),
+url('/assets/fonts/Geometria-Regular}') format('embedded-opentype'),
+url('/assets/fonts/Geometria-Regular.svg  ') format('svg'),
+url('/assets/fonts/Geometria-Regular.otf  '),
+url('/assets/fonts/Geometria-Regular.eot  ');
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+}
+
+теперь на div сборке будут отображаться шрифты но на build не будут. 
+для build нужно раскрыть app.css (format document) и поменять пути у всех шрифтов
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: local(PlayfairDisplay),
+    url(../fonts/PlayfairDisplay.woff) format("woff"),
+    url(../fonts/PlayfairDisplay.ttf) format("truetype"),
+    url(../fonts/PlayfairDisplay}) format("embedded-opentype"),
+    url(../fonts/PlayfairDisplay.svg) format("svg"),
+    url(../fonts/PlayfairDisplay.otf),
+    url(../fonts/PlayfairDisplay.eot);
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+------------изображения так
+   img(src="assets/img/buscet/buscet-1.png",alt="") 

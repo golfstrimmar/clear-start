@@ -1,0 +1,350 @@
+section#garant.garant {
+  .garant__wrapper {
+    min-height: 1095px;
+    width: 100%;
+    position: relative;
+    @media (min-width: 1015px) and (max-width: 1420px) {
+      min-height: 1031px;
+    }
+    @media (min-width: $media2) and (max-width: 1015px) {
+      min-height: 938px;
+    }
+
+    .container {
+      @media (min-width: $media2) and (max-width: 1015px) {
+        width: 100%;
+      }
+      @media (min-width: 0px) and (max-width: $media2) {
+        width: 100%;
+        padding: 0% 0% 0% 0%;
+      }
+    }
+
+    .garant__body {
+      width: 100%;
+      @include fdc();
+      @include alic();
+      padding:2% 0% 0% 0%;
+      overflow: hidden;
+    }
+    h2.garant__title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+      @media (min-width: $media2) and (max-width: 1015px) {
+        font-size: 24px;
+      }
+      @media (min-width: 0px) and (max-width: $media2) {
+        font-size: 16px;
+        line-height: 140%;
+      }
+      // Благодаря собственной службе доставки и бригаде
+
+      p {
+        font-family: Montserrat-SemiBold;
+        // установщиков мы можем гарантировать заявленные сроки
+      }
+    }
+
+    .garant__installers {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0% 0% 38% 0%;
+      margin: 6% 0% 0% 0%;
+      //  img(src="assets/img/garant/installers.png",alt="")
+      @media (min-width: 0px) and (max-width: $media2) {
+        padding: 0% 0% 49% 0%;
+        margin: 10% 0% 0% 0%;
+      }
+    }
+
+    .garant__plaha {
+      @include jucc();
+      width: 90%;
+      min-height: 373px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #2f3347;
+      border-radius: 5px;
+      @media (min-width: $media2) and (max-width: 1015px) {
+        width: 100%;
+      }
+    }
+    // --------------------------------------------------------
+    .garant-plaha__body {
+      @include jucb();
+      width: 100%;
+      height: 100%;
+      padding: 6.5% 6.5%;
+
+      .garant-plaha__item {
+        @include fdc();
+        flex: 0 1 30%;
+        height: 100%;
+        @media (min-width: 0px) and (max-width: $media2) {
+          flex: 0 1 100%;
+          @include alic();
+          margin: 0% 0% 20% 0%;
+        }
+        .garant-plaha__img {
+          position: relative;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          background: linear-gradient(92.69deg, #e74063 0%, #755cdb 100%);
+          box-shadow: 0px 0px 30px rgba(180, 77, 154, 0.4);
+          .plaha-img {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+          }
+          .garant-plaha__img1 {
+            top: -13%;
+            left: 0%;
+            width: 120px;
+            height: 120px;
+          }
+          .garant-plaha__img2 {
+            top: 3%;
+            left: -10%;
+          }
+          .garant-plaha__img3 {
+            top: 30%;
+            left: -16%;
+          }
+        }
+
+        .garant-plaha__title {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 130%;
+          color: #ffffff;
+          padding: 11% 0% 0% 0%;
+          // Установка в день доставки
+          @media (min-width: 0px) and (max-width: $media2) {
+            font-size: 14px;
+            line-height: 130%;
+          }
+        }
+        .garant-plaha__text {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 150%;
+          color: #ffffff;
+          opacity: 0.75;
+          // Наша бригада сборщиков к моменту доставки уже на месте и приступает к установки в тот же день
+          padding: 4.5% 0% 0% 0%;
+          @media (min-width: 0px) and (max-width: $media2) {
+            text-align: center;
+            font-size: 12px;
+          }
+        }
+
+        &:nth-child(2) {
+          .garant-plaha__img1 {
+            top: -22%;
+            left: -40%;
+            width: 140px;
+            height: 120px;
+          }
+        }
+        &:nth-child(3) {
+          .garant-plaha__img1 {
+            top: -31%;
+            left: 9%;
+            width: 140px;
+            height: 120px;
+          }
+        }
+      }
+    }
+  }
+
+  //  ---------------------------------------
+  .garant__slaider {
+    background: #262b3f;
+    @media (min-width: 0px) and (max-width: $media2) {
+      max-height: 450px;
+    }
+
+    .container {
+      @media (min-width: $media2) and (max-width: 1265px) {
+        width: 100%;
+        padding: 0% 2% 5%;
+      }
+      @media (min-width: 0px) and (max-width: $media2) {
+        padding: 4% 2% 5%;
+      }
+    }
+
+    .garant-slaider__body {
+      @include jucb();
+      padding: 1% 3% 5%;
+      @media (min-width: $media2) and (max-width: 1420px) {
+        padding: 2% 0% 5% 0%;
+      }
+      @media (min-width: 0px) and (max-width: $media2) {
+        max-height: 450px;
+      }
+
+      .garant-slaider__info {
+        text-align: right;
+        padding: 2% 0% 0% 0%;
+        flex: 0 1 190px;
+        position: relative;
+
+        @media (min-width: $media2) and (max-width: 1015px) {
+          flex: 0 1 100%;
+          @include jucc();
+          padding: 2% 0% 2% 0%;
+        }
+        @media (min-width: 0px) and (max-width: $media2) {
+          flex: 0 1 100%;
+          @include jucc();
+        }
+        p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 130%;
+          color: #ffffff;
+          opacity: 0.9;
+          // Посмотрите
+          white-space: pre;
+          @media (min-width: $media2) and (max-width: 1420px) {
+            font-size: 16px;
+          }
+          @media (min-width: 0px) and (max-width: $media2) {
+            font-size: 16px;
+            line-height: 130%;
+          }
+        }
+        span {
+          font-family: Montserrat-SemiBold;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 130%;
+          text-align: right;
+          color: #ffffff;
+          opacity: 0.9;
+          @media (min-width: $media2) and (max-width: 1420px) {
+            font-size: 16px;
+          }
+          @media (min-width: 0px) and (max-width: $media2) {
+            font-size: 16px;
+            line-height: 130%;
+          }
+          // как доставляем и собираем
+        }
+
+        .arrows-slider-work__arrow {
+          width: 34px;
+          height: 34px;
+          opacity: 0.4;
+          border: 1.5px solid #ffffff;
+          box-sizing: border-box;
+          background: transparent;
+          top: 85%;
+          @media (min-width: $media2) and (max-width: 1015px) {
+            top: 536%;
+          }
+          @media (min-width: 0px) and (max-width: $media2) {
+            top: 300px;
+          }
+        }
+
+        .arrows-slider-work__arrow_prev {
+          left: 54%;
+          @media (min-width: $media2) and (max-width: 1015px) {
+            left: 40%;
+          }
+          @media (min-width: 0px) and (max-width: $media2) {
+            left: 40%;
+            transform: translate(-50%);
+          }
+        }
+
+        .arrows-slider-work__arrow_next {
+          left: 72%;
+          @media (min-width: $media2) and (max-width: 1015px) {
+            left: 60%;
+          }
+          @media (min-width: 0px) and (max-width: $media2) {
+            left: 60%;
+            transform: translate(-50%);
+          }
+        }
+      }
+
+      .garant-slaider__area {
+        min-width: 0;
+        flex: 0 1 80%;
+        @media (min-width: $media2) and (max-width: 1015px) {
+          flex: 0 1 100%;
+          margin: 6% 0% 10% 0%;
+        }
+        @media (min-width: 0px) and (max-width: $media2) {
+          flex: 0 1 100%;
+          margin: 6% 0% 50% 0%;
+        }
+
+        // -----------слайдер
+
+        .gs__body {
+          .slick-track {
+            display: flex;
+          }
+          .slick-list {
+            overflow: hidden;
+          }
+          .slick-slide {
+            @include juce();
+            margin-left: 5px;
+            text-align: center;
+            @media (min-width: 0px) and (max-width: $media2) {
+              @include jucc();
+              margin-left: 0px;
+            }
+          }
+
+          .gs__item {
+            position: relative;
+            height: 175px;
+            @media (min-width: $media2) and (max-width: 1420px) {
+              width: 80% !important;
+            }
+
+
+            .gs-point {
+              @include center();
+              position: relative;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 114px;
+              height: 114px;
+              z-index: 2;
+              img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

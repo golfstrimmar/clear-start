@@ -1,0 +1,119 @@
+@import "utils/libs";
+@import "utils/null";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/slick";
+
+@import "common/header";
+@import "common/header1";
+
+@import "modules/create-pro";
+@import "modules/collect";
+@import "modules/fairytales";
+@import "modules/scheme";
+@import "modules/designers";
+@import "modules/invitation";
+@import "modules/confirm";
+@import "modules/work";
+@import "modules/thanks";
+@import "modules/footer";
+@import "modules/link"; 
+@import "modules/projects"; 
+@import "modules/garant"; 
+@import "modules/calc"; 
+@import "modules/pro"; 
+
+
+
+
+.wrapper {
+  overflow: hidden;
+  @include fdc;
+  min-height: 100vh;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  @include fdc();
+}
+.container {
+  // outline: 1px solid #4164ff;
+  width: 60.41666666666%; 
+  margin: 0 auto; 
+  position: relative;
+  z-index: 2;
+ 
+@media (min-width: 841px) and (max-width:  1770px) {
+width: 80%; 
+    padding-left: 30px ;
+    padding-right: 30px ;
+
+}
+
+  @media screen and (max-width:  840px) { 
+  width: 100%; 
+    padding-left: 15px ;
+    padding-right: 15px ;
+    }  
+
+}
+
+.ibg { 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  img {
+    display: none;
+  }
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+a {
+  // @include center();
+  // width: 100%;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+    z-index: 5;
+    
+  }
+}
+
+.img-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.lock {
+  overflow: hidden;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+}
+.active{
+  opacity: 1;
+visibility: visible;
+display: block;
+
+ }
+

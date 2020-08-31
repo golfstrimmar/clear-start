@@ -1,0 +1,399 @@
+.calc__wrapper {
+  background: #262b3f;
+  .container {
+    @media (min-width: $media3+1px) and (max-width: 1770px) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media (min-width:0px) and (max-width:$media3) {
+      padding-left: 0px;
+      padding-right: 0px;
+       }
+  }
+
+  .calc__body {
+    width: 100%;
+    min-height: 1105px;
+    padding: 20px 0px 210px 330px;
+    position: relative;
+    @include jucb();
+
+    @media (min-width: 1140px) and (max-width: 1770px) {
+      padding: 20px 0px 210px 330px;
+    }
+
+    @media (min-width: $media3+1px) and (max-width: 1140px) {
+      padding: 20px 0px 210px 270px;
+    }
+
+    @media (min-width: 0px) and (max-width: $media3) {
+      // padding: 0% 0% 418% 0%;
+      padding: 0% 0% 1100px 0%;
+      @include jucc();
+      max-height: 2500px !important;
+
+    }
+
+    .calc__item {
+      width: 48%;
+      height: 250px;
+      position: relative;
+      padding: 0% 0% 29.3% 0%;
+      background: linear-gradient(
+        180deg,
+        rgba(38, 43, 63, 0) 46.6%,
+        rgba(38, 43, 63, 0.8) 100%
+      );
+      border-radius: 5px;
+      margin: 0% 0% 5% 0%;
+// .bg{
+// img{
+//   border-radius: 5px;
+// }
+// }
+
+      @media (min-width: 0px) and (max-width: $media3) {
+        // width: 300px;
+        width: 92%;
+        height: 202px;
+        margin-bottom: 28px;
+        padding: 0px 0px 202px 0px;
+
+      }
+
+      .bg {
+        border-radius: 5px;
+      }
+      .calc__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 141%;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        z-index: 2;
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        @media (min-width: 0px) and (max-width: $media3) {
+          font-size: 16px;
+        }
+      }
+
+      .calc-button {
+        position: absolute;
+        top: 100%;
+        @include anim(0.2s);
+        width: 41%;
+        height: 43px;
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+
+        @media (min-width: 0px) and (max-width: $media3) {
+          height: 30px;
+        }
+
+        .button-color {
+          width: 100%;
+          height: 100%;
+          transform: translate(0%, -50%);
+
+          .button-color__link {
+            span {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 141%;
+              text-align: center;
+              color: #ffffff;
+              @media (min-width: $media3+1px) and (max-width: 1140px) {
+                font-size: 10px;
+              }
+              @media (min-width: 0px) and (max-width: $media3) {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+      .calc__button-left {
+        left: 8%;
+      }
+      .calc__button-right {
+        right: 8%;
+      }
+    }
+
+    // ----------------------
+    .calc__link {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 300px;
+      height: 700px;
+      background: #2f3347;
+      border-radius: 5px;
+      overflow: hidden;
+      @media (min-width: $media3+1px) and (max-width: 1140px) {
+        width: 250px;
+        height: 700px;
+        top: 0%;
+        left: 0%;
+      }
+
+      @media (min-width: 0px) and (max-width: $media3) {
+        width: 300px;
+        height: 700px;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+    .calc-link__body {
+      width: 100%;
+      height: 100%;
+      padding: 16% 17% 16% 17%;
+      @media (min-width: $media3) and (max-width: 1140px) {
+        padding: 40px 26px;
+        @include jucc();
+      }
+      .calc-link__img {
+        height: 235px;
+        width: 300px;
+        position: relative;
+        @media (min-width: $media3) and (max-width: 1140px) {
+          height: 168px;
+        }
+        img {
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .calc-link__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 141%;
+        color: #ffffff;
+        padding: 5% 0% 0% 0%;
+        // Рассчитаем стоимость вашего проекта
+      }
+      .calc-link__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 141%;
+        color: #ffffff;
+        opacity: 0.7;
+        padding: 4% 0% 0% 0%;
+        //  и дадим грамотные рекомендации уже сегодня
+      }
+      form.calc-link__forma {
+        padding: 10% 0% 0% 0%;
+        .calc-link__in {
+          width: 200px;
+          height: 44px;
+          position: relative;
+          z-index: 1;
+          background: rgba(113, 113, 113, 0.1);
+          margin: 0% 0% 5% 0%;
+          input {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 200px;
+            height: 44px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 141%;
+            color: #ffffff;
+            border-radius: 5px;
+            z-index: 2;
+            background-color: transparent;
+            padding: 0% 0% 0% 19%;
+          }
+
+          &_visual {
+            a {
+              @include center();
+              padding: 0% 0% 0% 9%;
+              span {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 12px;
+                color: #ffffff;
+                opacity: 0.7;
+              }
+            }
+          }
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(100%, -50%);
+            z-index: 1;
+          }
+        }
+
+        .calc-link__button {
+          position: relative;
+          margin: 8% 0% 0% 0%;
+
+          input {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            width: 200px;
+            height: 54px;
+            border-radius: 100px;
+            background-color: transparent;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 141%;
+            text-align: center;
+            color: #ffffff;
+            @include anim(0.2s);
+
+            &:hover {
+              transform: scale(1.05);
+              cursor: pointer;
+            }
+          }
+
+          .button-color {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 200px;
+            height: 54px;
+            z-index: 1;
+          }
+        }
+      }
+
+      .calc-link__person {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0.5;
+        @include jucc();
+        padding: 34% 0% 0% 0%;
+        // Вы соглашаетесь на обработку персональных данных
+      }
+    }
+    // -------------------------------------------------
+    .calc__messengers {
+      position: absolute;
+      top: 725px;
+
+      left: 0%;
+      width: 300px;
+      height: 270px;
+      @media (min-width: $media3+1px) and (max-width: 1140px) {
+        width: 250px;
+        top: 66%;
+        left: 0%;
+      }
+      @media (min-width: 0px) and (max-width: $media3) {
+        width: 300px;
+        height: 270px;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+    .calc-messengers__body {
+      width: 100%;
+      height: 100%;
+      background: #2f3347;
+      opacity: 0.9;
+      border-radius: 5px;
+      @include jucc();
+      padding: 15% 0% 15% 0%;
+      .calc-messengers__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 141%;
+        color: #ffffff;
+        // Увас есть вопросы?
+      }
+
+      .calc-messengers__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 141%;
+        color: #ffffff;
+        opacity: 0.7;
+        // Задайте их удобным способом
+      }
+      .calc-messengers__icons {
+        .calc-messengers-icon {
+          @include anim(0.2s);
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        @include jucb();
+      }
+      a.calc-messengers__button {
+        position: relative;
+        // (href="#") Заказать звонок
+        width: 200px;
+        height: 48px;
+        box-shadow: 0px 0px 30px rgba(180, 77, 154, 0.4);
+        border-radius: 100px;
+        @include center();
+        @include anim(0.2s);
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+        span {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 141%;
+          text-align: center;
+          color: #ffffff;
+        }
+        img {
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          // transform: translate(-50%,-50%);
+        }
+      }
+    }
+  }
+}

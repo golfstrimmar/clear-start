@@ -1,0 +1,33 @@
+section#projects.projects
+  .projects__wrapper
+    .container
+      .projects__body
+        h2.projects__title Посмотрите наши проекты
+        .projects__nav.projects-nav
+          .projects-nav__body
+            +projects-nav("Шкафы Купе")
+            +projects-nav("Кухня")
+            +projects-nav("Гардеробная")
+            +projects-nav("Спальня")
+            +projects-nav("Детская")
+            +projects-nav("Гостиная")
+            +projects-nav("Прихожая")
+            +projects-nav("Ванная")
+        .projects__galery.projects-galery
+          .projects-galery__body
+            +projects-galery("assets/img/projects/projects-img-4.png","Современный шкаф купе")
+            +projects-galery("assets/img/projects/projects-img-1.png","Шкаф купе на заказ")
+            +projects-galery("assets/img/projects/projects-img-3.png","Встроенный шкаф купе")
+            +projects-galery("assets/img/projects/projects-img-2.png","Дизайн шкафа купе")
+        .projects__galery.projects__galery-hidden.projects-galery-hidden
+          .projects-galery__body
+            +projects-galery("assets/img/projects/projects-img-4.png","Современный шкаф купе")
+            +projects-galery("assets/img/projects/projects-img-1.png","Шкаф купе на заказ")
+            +projects-galery("assets/img/projects/projects-img-3.png","Встроенный шкаф купе")
+            +projects-galery("assets/img/projects/projects-img-2.png","Дизайн шкафа купе")
+        //- .projects__button
+        //-   //- +button-color("Посмотреть ещё")
+        //-   .button-color
+        //-     .button-color__link
+        //-       span  Посмотреть ещё
+        //-       img(src=img,alt="")

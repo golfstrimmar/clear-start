@@ -1,0 +1,342 @@
+@import "../utils/mixins";
+@import "../utils/fonts";
+.fairytales{ 
+ 
+  .fairytales__wrapper{
+    position: relative;
+width: 100%;
+height: 100%;
+background:  #262B3F;
+  }
+
+ &__body{
+     position: relative;
+     @include jucc();
+     width: 100%;
+     height: 100%;
+      padding: 0% 0% 6.8% 0%; 
+      @media (min-width:0px) and (max-width:800px) { padding: 0% 0% 20% 0%;  }
+
+  }
+
+  .fairytales__head{
+    position: relative;
+    flex: 0 1 100%;
+    
+   
+  }
+
+  &__content {  
+position: relative;
+flex: 0 1 100%;
+padding: 0% 0% 0% 0%;
+}
+
+
+  }
+
+
+
+.content-fairytales {
+  &__body {  
+position: relative;
+@include jucb();
+width: 100%;
+height: 100%;
+padding: 5.3% 0% 0% 0%;
+@media (min-width:  501px) and (max-width:  1290px) {
+  @include jucc();
+  padding: 640px 0px 0px 0px; 
+}
+@media (min-width:  0px) and (max-width:  500px) {
+  padding: 387px 0 0;
+}
+
+
+}
+
+		&__column {
+      flex: 0 1 35%;
+@media (min-width:  501px) and (max-width:  1290px) {
+  flex: 0 1 80%;
+}
+@media (min-width:  0px) and (max-width:  500px) {
+  flex: 0 1 100%;
+
+}
+    }
+    &__manager{ 
+flex: 0 1 21.2%;  
+position: absolute;
+width: auto;
+height: auto;
+top: 2%;
+left: 50%;
+transform: translate(-50%,0%); 
+@media (min-width:  0px) and (max-width:  500px) {
+  top: 31px;
+}
+
+}
+&__item{
+
+
+@media screen and (min-width:  1771px)  {
+  min-height: 205px; 
+}
+
+@media (min-width:  1291px) and (max-width:  1770px) {
+ min-height: 215px; 
+}
+
+@media (min-width:  500px) and (max-width:  1290px) {
+  min-height: 180px;  
+}
+}
+
+}
+.fairytales-manager{
+  &__body{
+  position: relative;
+  width: 100%;
+  padding:  0% 0% 0% 0%;
+  // background: blue;
+  }
+  &__img{
+  height: 488px;
+  width: 325px;
+  position: relative;
+@media (min-width:  0px) and (max-width:  500px) {
+  height: 185px;
+  width: 136px;
+}
+
+  img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+   
+  }
+  
+  }
+   &__plaza{
+ position: absolute;
+bottom: -22%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+  width: 297px;
+height: 73px;
+background: rgba(255, 255, 255, 0.18);
+box-shadow: 0px 4px 30px rgba(180, 77, 154, 0.4);
+border-radius: 5px;
+padding: 20px 27px 20px 40px;
+@media (min-width:  501px) and (max-width:  1430px) {
+  width: 220px;
+   height: 90px;
+   bottom: -28%;
+}
+// @media (min-width:  0px) and (max-width:  500px) {
+  
+// }
+@media (min-width:  0px) and (max-width:  500px) {
+  width: 224px;
+height: 46px;
+bottom: -37%;
+ left: 50%;
+ padding: 8px 6px 5px 29px;
+}
+   p{
+     @include Text-Style-12;
+position: relative;
+@media (min-width:  0px) and (max-width:  500px) {
+  font-size: 10px;
+
+}
+
+&:after{
+ content: "";
+ background: linear-gradient(120.26deg, #E74063 10.53%, #755CDB 83.08%);
+ position: absolute;
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+  top: 50%; 
+  left: -5%;
+  transform: translate(-50%,-50%);
+  }
+   }
+  }
+
+&__plaza-small{
+@include Text-Style-13;
+position: absolute;
+background: rgba(113, 113,113, 0.5);
+border-radius: 4px;
+width: 163px;
+height: 35px;
+top: 83%;
+left: 54%;
+text-align: center;
+padding:4% 0% 0% 0%;
+
+@media (min-width:  501px) and (max-width:  1430px) {
+  width: 140px;   
+}
+@media (min-width:  0px) and (max-width:  500px) {
+  font-size: 10px;
+  width: 118px;
+height: 25px;
+top: 64%;
+}
+
+}
+&__plaza-small1{
+@include Text-Style-14;
+position: absolute;
+top: 92%;
+left: 61%;
+@media (min-width:  0px) and (max-width:  500px) {
+  font-size: 10px;
+  top: 79%;
+}
+}
+}
+
+.fairytales-item {
+
+		&__body {
+      width: 100%;
+      height: 100%;
+      padding: 2% 0% 9% 27%;
+      @media (min-width:  500px) and (max-width:  1290px) {
+ padding: 2% 0% 0% 27%;
+}
+@media (min-width:  0px) and (max-width:  500px) {
+  padding: 0px 8px 118px 8px ;
+
+}
+
+
+    }
+		&__title {
+      @include Text-Style-10;
+      position: relative;
+      @media (min-width:  0px) and (max-width:  500px) {
+        font-size: 14px;
+      }
+      .img1{
+  position: absolute;
+        top: 2%;
+        left: -39%;
+        @media (min-width:  0px) and (max-width:  500px) {
+        top: -82px;
+        left: -7px;
+        width: 84px;
+
+      }
+    }
+      .img-long{
+        position: absolute;
+       top: -72%;
+      left: -30%;
+      @media (min-width:  0px) and (max-width:  500px) {
+       top: -129px;
+left: 6px;
+      }
+      }
+      .img3{
+         position: absolute;
+     top: 32%;
+left: -37%;
+
+@media (min-width:  0px) and (max-width:  500px) {
+width: 79px;
+top: -136%;
+left: 3%;
+}
+
+      }
+      .img4{
+         position: absolute;
+     top: 81%;
+left: -39%;
+z-index: 2;
+@media (min-width:  0px) and (max-width:  500px) {
+top: -167%;
+left: 5px;
+width: 74px;
+}
+      }
+      .img5{
+         position: absolute;
+ top: -12%;
+left: -31%;
+@media (min-width:  0px) and (max-width:  500px) {
+width: 55px;
+top: -243%;
+left: 12%;
+}
+      }
+      .img6{
+         position: absolute;
+ top: -12%;
+left: -31%;
+      }
+
+      .plus-img{
+        position: absolute;
+        top: 13%; 
+        left: -39.5%;
+          @media (min-width:  0px) and (max-width:  500px) {
+top: -93px;
+left: -10px;
+width: 66px;
+
+      }
+      }
+      
+		}
+
+		&__text {
+       position: relative;
+      @include Text-Style-11;
+      padding: 0px 0px 0px 30px;
+      margin: 20px 0px 0px 0px;
+      @media (min-width:  0px) and (max-width:  500px) {
+        padding: 0px 8px 0px 18px;
+        margin: 5px 0px 0px 0px;
+        font-size: 11px;
+      }
+      img{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        @media (min-width:  0px) and (max-width:  500px) {
+          width: 10px;height: 10px;
+          top: 2px;
+        left: 0%;
+        }
+      }
+    
+		}
+}
+
+.fairytales__button{
+  margin: 1% 0% 0% 0%;
+  @media (min-width:  0px) and (max-width:  500px) {
+    
+    margin: -77px  0px 0px;
+  .button-color{
+width: 252px;
+height: 51px;
+span{
+ font-size: 15px; 
+}
+}
+  }
+
+
+
+}

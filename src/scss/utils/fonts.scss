@@ -1,0 +1,265 @@
+
+@import "mixins";
+
+
+@font-face {
+font-family: Montserrat;
+src:
+local(Montserrat-Regular),
+url('/assets/fonts/Montserrat-Regular.woff') format('woff'),
+url('/assets/fonts/Montserrat-Regular.ttf') format('truetype'),
+url('/assets/fonts/Montserrat-Regular}') format('embedded-opentype'),
+url('/assets/fonts/Montserrat-Regular.svg  ') format('svg'),
+url('/assets/fonts/Montserrat-Regular.otf  '),
+url('/assets/fonts/Montserrat-Regular.eot  ');
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+}
+
+@font-face {
+font-family: Montserrat-SemiBold;
+src:
+local(Montserrat-SemiBold),
+url('/assets/fonts/Montserrat-SemiBold.woff') format('woff'),
+url('/assets/fonts/Montserrat-SemiBold.ttf') format('truetype'),
+url('/assets/fonts/Montserrat-SemiBold}') format('embedded-opentype'),
+url('/assets/fonts/Montserrat-SemiBold.svg  ') format('svg'),
+url('/assets/fonts/Montserrat-SemiBold.otf  '),
+url('/assets/fonts/Montserrat-SemiBold.eot  ');
+font-weight: normal;
+font-style: bold;
+font-stretch: normal;
+}
+
+@mixin Text-Style-1{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+};
+@mixin Text-Style-2{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 141%;
+text-align: right;
+color: #FFFFFF;
+};
+@mixin Text-Style-3{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 156.7%;
+color: #FFFFFF;
+};
+@mixin Text-Style-4{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 0.5;
+color: #FFFFFF;
+opacity: 0.8;
+};
+@mixin Text-Style-5{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 141%;
+text-align: center;
+color: #FFFFFF;
+};
+@mixin Text-Style-6{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 1;
+text-align: center;
+color: #FFFFFF;
+};
+@mixin Text-Style-7{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 130%;
+color: #FFFFFF;
+};
+@mixin Text-Style-8{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+color: #262B3F;
+};
+@mixin Text-Style-9{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 140%;
+color: #000000;
+opacity: 0.6;
+};
+@mixin Text-Style-10{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 130%;
+color: #FFFFFF;
+};
+
+@mixin Text-Style-11{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+color: #FFFFFF;
+opacity: 0.8;
+};
+
+@mixin Text-Style-12{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 130%;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+opacity: 0.85;
+};
+@mixin Text-Style-13{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 130%;
+color: #FFFFFF;
+opacity: 0.85;
+};
+@mixin Text-Style-14{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 130%;
+color: #FFFFFF;
+opacity: 0.85;
+};
+@mixin Text-Style-15{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 130%;
+color: #FFFFFF;
+};
+@mixin Text-Style-16{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 130%;
+color: #FFFFFF;
+opacity: 0.9;
+};
+@mixin Text-Style-17{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 130%;
+color: #FFFFFF;
+};
+@mixin Text-Style-18{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 140%;
+text-align: center;
+color: #FFFFFF;
+};
+@mixin Text-Style-19{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 140%;
+color: #262B3F;
+opacity: 0.7;
+};
+@mixin Text-Style-20{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 130%;
+color: #FFFFFF;
+};
+@mixin Text-Style-21{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 130%;
+color: #FFFFFF;
+};
+@mixin Text-Style-22{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+color: #FFFFFF;
+};
+@mixin Text-Style-23{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+opacity: 0.8;
+};
+@mixin Text-Style-24{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+color: #FFFFFF;
+};
+@mixin Text-Style-25{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 140%;
+color: #FFFFFF;
+opacity: 0.75;
+};
+// @mixin Text-Style-11{
+
+// };
+// @mixin Text-Style-11{
+
+// };
+// @mixin Text-Style-11{
+
+// };
+// @mixin Text-Style-11{
+
+// };
