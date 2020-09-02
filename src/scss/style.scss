@@ -10,6 +10,18 @@
 // @import "common/header1";
 @import "common/common";
 
+// ----подключение bootstrap-------------------- 
+// ---------это вообще все----------------------
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// ----- это только сетка-----------------------
+// @import 'node_modules/bootstrap/scss/bootstrap-grid';
+// ---------------------------------------------
+
+
+
+@import "modules/work";
+
 // @import "modules/create-pro";
 // @import "modules/collect";
 // @import "modules/fairytales";
@@ -17,7 +29,6 @@
 // @import "modules/designers";
 // @import "modules/invitation";
 // @import "modules/confirm";
-@import "modules/work";
 // @import "modules/thanks";
 // @import "modules/footer";
 // @import "modules/link"; 
@@ -25,6 +36,8 @@
 // @import "modules/garant"; 
 // @import "modules/calc"; 
 // @import "modules/pro"; 
+
+
 
 
 

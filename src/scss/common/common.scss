@@ -13,25 +13,29 @@
   @include fdc();
 }
 .container {
-  // outline: 1px solid #4164ff;
-  width: 60.41666666666%; 
-  margin: 0 auto; 
-  position: relative;
-  z-index: 2;
+  outline: 1px solid #4164ff;
+  // width: 60.41666666666%; 
+  // margin: 0 auto; 
+  // position: relative;
+  // z-index: 2;
  
-@media (min-width: 841px) and (max-width:  1770px) {
-width: 80%; 
-    padding-left: 30px ;
-    padding-right: 30px ;
+// @media (min-width: 841px) and (max-width:  1770px) {
+// width: 80%; 
+//     padding-left: 30px ;
+//     padding-right: 30px ;
+
+// }
+
+//   @media screen and (max-width:  840px) { 
+//   width: 100%; 
+//     padding-left: 15px ;
+//     padding-right: 15px ;
+//     }  
 
 }
 
-  @media screen and (max-width:  840px) { 
-  width: 100%; 
-    padding-left: 15px ;
-    padding-right: 15px ;
-    }  
-
+.row{
+  outline: 1px solid #55FFCF;
 }
 
 .ibg { 
@@ -86,3 +90,16 @@ visibility: visible;
 display: block;
 
  }
+.empty-100{
+  // height: 1px;
+  width: 100%;
+  flex: 0 1 100%;
+}
+
+
+
+
+
+
+
+
