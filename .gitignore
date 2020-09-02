@@ -26,7 +26,7 @@ php-errors.log
 yarn-error.log
 
 # Build system
-node_modules/*
+node_modules
 dist/
 
 # IDE specific
