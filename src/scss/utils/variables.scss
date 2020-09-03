@@ -7,4 +7,18 @@ $media3: 800px;
 $media4: 500px; 
 $media5: 900px;
 
-
+// -----так прописать цвета. потом использовать  color: theme-color("black2");------
+$theme-colors: (
+  "white": #fff,
+  "black": #000,
+  "black2": #0d0d0d,
+  "black3": #181818,
+  "blue": #2980b9,
+  "red": #fa333c,
+  "gray": #0e0e0e,
+  "gray2": #1f1f1f,
+  "gray3": #fafafa,
+  "gray4": #bebbbb,
+  "gray5": #f6f6f6,
+  "gray-light": #f1f1f1,
+);
