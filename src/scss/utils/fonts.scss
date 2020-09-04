@@ -2,35 +2,175 @@
 @import "mixins";
 
 
+// @font-face {
+// font-family: Montserrat;
+// src:
+// local(Montserrat-Regular),
+// url('/assets/fonts/Montserrat-Regular.woff') format('woff'),
+// url('/assets/fonts/Montserrat-Regular.ttf') format('truetype'),
+// url('/assets/fonts/Montserrat-Regular}') format('embedded-opentype'),
+// url('/assets/fonts/Montserrat-Regular.svg  ') format('svg'),
+// url('/assets/fonts/Montserrat-Regular.otf  '),
+// url('/assets/fonts/Montserrat-Regular.eot  ');
+// font-weight: normal;
+// font-style: normal;
+// font-stretch: normal;
+// }
+
+// @font-face {
+// font-family: Montserrat-SemiBold;
+// src:
+// local(Montserrat-SemiBold),
+// url('/assets/fonts/Montserrat-SemiBold.woff') format('woff'),
+// url('/assets/fonts/Montserrat-SemiBold.ttf') format('truetype'),
+// url('/assets/fonts/Montserrat-SemiBold}') format('embedded-opentype'),
+// url('/assets/fonts/Montserrat-SemiBold.svg  ') format('svg'),
+// url('/assets/fonts/Montserrat-SemiBold.otf  '),
+// url('/assets/fonts/Montserrat-SemiBold.eot  ');
+// font-weight: normal;
+// font-style: bold;
+// font-stretch: normal;
+// }
+
 @font-face {
-font-family: Montserrat;
+font-family: DMSans;
 src:
-local(Montserrat-Regular),
-url('/assets/fonts/Montserrat-Regular.woff') format('woff'),
-url('/assets/fonts/Montserrat-Regular.ttf') format('truetype'),
-url('/assets/fonts/Montserrat-Regular}') format('embedded-opentype'),
-url('/assets/fonts/Montserrat-Regular.svg  ') format('svg'),
-url('/assets/fonts/Montserrat-Regular.otf  '),
-url('/assets/fonts/Montserrat-Regular.eot  ');
-font-weight: normal;
+local(DMSans-Bold),
+url('/assets/fonts/DMSans-Bold.woff') format('woff'),
+url('/assets/fonts/DMSans-Bold.ttf') format('truetype'),
+url('/assets/fonts/DMSans-Bold}') format('embedded-opentype'),
+url('/assets/fonts/DMSans-Bold.svg  ') format('svg'),
+url('/assets/fonts/DMSans-Bold.otf  '),
+url('/assets/fonts/DMSans-Bold.eot  ');
+font-weight: bold;
 font-style: normal;
 font-stretch: normal;
 }
 
 @font-face {
-font-family: Montserrat-SemiBold;
+font-family: DMSans;
 src:
-local(Montserrat-SemiBold),
-url('/assets/fonts/Montserrat-SemiBold.woff') format('woff'),
-url('/assets/fonts/Montserrat-SemiBold.ttf') format('truetype'),
-url('/assets/fonts/Montserrat-SemiBold}') format('embedded-opentype'),
-url('/assets/fonts/Montserrat-SemiBold.svg  ') format('svg'),
-url('/assets/fonts/Montserrat-SemiBold.otf  '),
-url('/assets/fonts/Montserrat-SemiBold.eot  ');
-font-weight: normal;
-font-style: bold;
+local(DMSans-Medium),
+url('/assets/fonts/DMSans-Medium.woff') format('woff'),
+url('/assets/fonts/DMSans-Medium.ttf') format('truetype'),
+url('/assets/fonts/DMSans-Medium}') format('embedded-opentype'),
+url('/assets/fonts/DMSans-Medium.svg  ') format('svg'),
+url('/assets/fonts/DMSans-Medium.otf  '),
+url('/assets/fonts/DMSans-Medium.eot  ');
+font-weight: medium;
+font-style: normal;
 font-stretch: normal;
 }
+
+@font-face {
+font-family: DMSans;
+src:
+local(DMSans-Regular),
+url('/assets/fonts/DMSans-Regular.woff') format('woff'),
+url('/assets/fonts/DMSans-Regular.ttf') format('truetype'),
+url('/assets/fonts/DMSans-Regular}') format('embedded-opentype'),
+url('/assets/fonts/DMSans-Regular.svg  ') format('svg'),
+url('/assets/fonts/DMSans-Regular.otf  '),
+url('/assets/fonts/DMSans-Regular.eot  ');
+font-weight: 500;
+font-style: normal;
+font-stretch: normal;
+}
+
+@font-face {
+font-family: Poppins;
+src:
+local(Poppins),
+url('/assets/fonts/Poppins-Bold.woff') format('woff'),
+url('/assets/fonts/Poppins-Bold.ttf') format('truetype'),
+url('/assets/fonts/Poppins-Bold}') format('embedded-opentype'),
+url('/assets/fonts/Poppins-Bold.svg  ') format('svg'),
+url('/assets/fonts/Poppins-Bold.otf  '),
+url('/assets/fonts/Poppins-Bold.eot  ');
+font-weight: bold;
+font-style: normal;
+font-stretch: normal;
+}
+
+
+@font-face {
+font-family: CeremoniousOne;
+src:
+local(CeremoniousOne),
+url('/assets/fonts/CeremoniousOne.woff') format('woff'),
+url('/assets/fonts/CeremoniousOne.ttf') format('truetype'),
+url('/assets/fonts/CeremoniousOne}') format('embedded-opentype'),
+url('/assets/fonts/CeremoniousOne.svg  ') format('svg'),
+url('/assets/fonts/CeremoniousOne.otf  '),
+url('/assets/fonts/CeremoniousOne.eot  ');
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+}
+
+.Text-Style-2 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: $white;
+}
+.Text-Style {
+  font-family: DMSans;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.52;
+  color: $pinkish-grey-two;
+}
+.Text-Style-3 {
+  font-family: DMSans;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.29px;
+  color: $white;
+}
+.Text-Style-5 {
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: medium;
+  
+  letter-spacing: 0.3px;
+  color: $white;
+}
+.Text-Style-4 {
+  font-family: DMSans;
+  font-size: 14px;
+  letter-spacing: 0.26px;
+  color: $white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @mixin Text-Style-1{
   font-family: Montserrat;

@@ -1,0 +1,11 @@
+.button__red {
+  width: 304px;
+  height: 80px;
+  background-color: $strawberry-two;
+  position: relative;
+  @include anim(0.2s);
+
+  &:hover {
+    @include scale(1.05);
+  }
+}

@@ -1,19 +1,61 @@
+include ../common/animals
+
+
+//- -------------------footer#footer.footer--------------------------------------
+//- -------------------footer#footer.footer--------------------------------------
+//- -------------------footer#footer.footer--------------------------------------
+//- -------------------footer#footer.footer--------------------------------------
+
+mixin plaza-item(text1,text2,text3,text4,text5)
+  .footer-plaza__item.col-md-3
+    a.footer-plaza__text1.Text-Style-5(href="#!")=text1
+    a.footer-plaza__text1.Text-Style-5(href="#!")=text2
+    a.footer-plaza__text1.Text-Style-5(href="#!")=text3
+    a.footer-plaza__text1.Text-Style-5(href="#!")=text4
+    a.footer-plaza__text1.Text-Style-5(href="#!")=text5 
+
+footer#footer.footer
+  .footer__wrapper
+    .ibg.bg
+      img(src="assets/img/work/footer-bg.png",alt="img")
+    .container
+      .footer__body.row.no-gutters
+        .footer__title.col-6
+          h2 Let<span>’</span>s Talk
+          .footer__discription.Text-Style We collaborate with ambitious people and brands. Let's chat about what we can do for you.
+        .footer__button
+          +button-red("Drop us a line")
+        .w-100
+        .footer__plaza.footer-plaza.col-md-12
+          .footer-plaza__body.row.no-gutters.justify-content-between
+            .footer-plaza__item.col-md-4.mr-auto
+              .footer-plaza__logo
+                img(src="assets/img/work/logo-dark.svg",alt="")
+              .footer-plaza__text.Text-Style-4 Victor Chmilenko 47, Kropyvnytskyi, 25006
+              .footer-plaza__text.Text-Style-4 097 700 3001
+              .footer-plaza__text.Text-Style-4 info@splitdev.pro
+            +plaza-item("Portfolio","Capabilities","Work process","About us","Contact us") 
+            +plaza-item("Dribbble","Behance","Instagram","Facebook","LinkedIn") 
+
+
+//- ------------------section#work.work---------------------------------
+//- ------------------section#work.work---------------------------------
+//- ------------------section#work.work---------------------------------
+//- ------------------section#work.work---------------------------------
+
 mixin work-item(name,img,title,text)
   div(class="item col-md-4 row no-gutters " + name)
-    .item__img.col-sm-12.col-md-2.align-self-center
+    .item__img.bg-primary.justify-md-content-center.col-md-2.align-self-center
       img(src=img,alt="img")
-    .item__column.col-md-10
-      h5.item__title=title
-      p.text6.item__text=text
-
-
-
-
+    .col-md-10
+      .item__title
+        h5=title 
+      p.item__text.Text-Style-4=text  
 
 section#work.work
   .work__wrapper 
     .work__body.container 
-      .row.no-gutters
+      .row.no-gutters.justify-content-around.justify-md-content-center.bg-success
         +work-item("work__item","assets/img/work/tie.svg","434","Works witn happy customers") 
         +work-item("work__item","assets/img/work/tie.svg","134"," happy customers") 
         +work-item("work__item","assets/img/work/tie.svg","134","Works wiustomers") 
@@ -25,135 +67,152 @@ section#work.work
         +work-item("work__item","assets/img/work/tie.svg","94","Wo happy customers") 
         +work-item("work__item","assets/img/work/tie.svg","134","Works witn happers")
 
-section#work.work
-  .work__wrapper
-    .container
-      .work__body.row.no-gutters
-        h2.work__title.w-100.bg-success.row.no-gutters.align-items-center   work
-        .work__discription.col-md-12.text-right work discription
-        
 
-//- d-none
-//- d-inline 
-//- d-block 
-//- d-inline-block
-//- d-table
-//- d-table-cell
-//- d-flex
-//- d-inline-flex
-//- d-block
-//- d-xl-none
 
-//- d-sm-none
-//- d-md-none
-//- d-lg-none
-//- d-xl-none
+//- https://html5css.ru/bootstrap4/bootstrap_ref_all_classes.php
+//- .d-none
+//- .d-inline 
+//- .d-block 
+//- .d-inline-block
+//- .d-table
+//- .d-table-cell
+//- .d-flex
+//- .d-inline-flex
+//- .d-block
+//- .d-xl-none
+//- .
+//- .d-sm-none
+//- .d-md-none
+//- .d-lg-none
+//- .d-xl-none
+//- .
+//- .container-fluid
+//- .
+//- .col-xl-
+//- .col-lg-
+//- .col-md-
+//- .col-sm-
+//- .col-
 
-//- container-fluid
-
-//- col-xl-
-//- col-lg-
-//- col-md-
-//- col-sm-
-//- col-
-
-//- clearfix
+//- .clearfix
 //- .w-25
 //- .w-50
 //- .w-75
 //- w-100
 
 //- -ширина по содержимому
-//- col-auto
-//- col-sm-auto
+//- .col-auto
+//- .col-sm-auto
+//- .
+//- .flex-column
+//- .
+//- .align-items-center
+//- .align-items-md-center
+//- .align-self-start
+//- .align-self-center
+//- .align-items-end
+//- .align-self-end
+//- .
+//- .justify-content-start
+//- .justify-content-center
+//- .justify-content-end
+//- .justify-content-around
+//- .justify-content-between
+//- .justify-md-content-between
+//- .
+//- .w-100
+//- .no-gutters
+//- .offset-4
+//- .offset-md-4
+//- .
+//- .order-md-12 ----- но будет отображаться последним
+//- .order-md-last
+//- .order-xl-first
+//- .text-nowrap
+//- .text-truncate
+//- .text-lowercase
+//- .text-uppercase
+//- .text-uppercase
+//- .text-center
+//- .text-md-center
+//- .font-italic
+//- .font-weight-bold
+//- .font-weight-light
+//- .
+//- .text-decoration-none
+//- .text-hide
+//- .text-right
+//- .text-left
+//- .
+//- .m-auto
+//- .ml-auto
+//- .mr-auto
+//- .mt-auto
+//- .mb-auto
+//- .mt-{breakpoint}-auto
+//- .
+//- .m-# / m-*-#	числом от 0 до 5	
+//- .mt-# / mt-*-#	
+//- .mb-# / mb-*-#	
+//- .ml-# / ml-*-#	
+//- .mr-# / mr-*-#	
+//- .mx-# / mx-*-#	Адаптивные левый и правый поля автоматических (горизонтальных)
+//- классов. * can be sm, md, lg or xl. # может быть числом от 0 до 5	
+//- .my-# / my-*-#
 
-//- flex-column
-
-//- align-items-center
-//- align-items-md-center
-//- align-self-start
-//- align-self-center
-//- align-items-end
-//- align-self-end
-
-//- justify-content-start
-//- justify-content-center
-//- justify-content-end
-//- justify-content-around
-//- justify-md-content-between
-
-//- w-100
-//- no-gutters
-//- offset-4
-//- offset-md-4
-
-//- order-md-12 ----- но будет отображаться последним
-//- order-md-last
-//- order-xl-first
-//- text-nowrap
-//- text-truncate
-//- text-lowercase
-//- text-uppercase
-//- text-uppercase
-//- text-center
-//- text-md-center
-//- font-italic
-//- font-weight-bold
-//- font-weight-light
-
-//- text-decoration-none
-//- text-hide
-//- text-right
-//- text-left
-
-//- m-auto
-//- ml-auto
-//- mr-auto
-//- mt-auto
-//- mb-auto
-//- mt-{breakpoint}-auto
-
-//- bg-primary
-//- bg-secondary
-//- bg-success 
-//- bg-info
-//- bg-warning
-//- bg-danger
-//- bg-light
-//- bg-dark
-//- bg-white
-
-//- text-primary
-//- text-secondary
-//- text-success
-//- text-info
-//- text-warning
-//- text-danger
-//- text-light
-//- text-dark
-//- text-white
-
+//- .bg-primary
+//- .bg-secondary
+//- .bg-success 
+//- .bg-info
+//- .bg-warning
+//- .bg-danger
+//- .bg-light
+//- .bg-dark
+//- .bg-white
+//- .
+//- .text-primary
+//- .text-secondary
+//- .text-success
+//- .text-info
+//- .text-warning
+//- .text-danger
+//- .text-light
+//- .text-dark
+//- .text-white
+//- .
 //- .shadow
+//- .
+//- .spinner-border 
+//- .spinner-border-sm
+//- .spinner-grow 
+//- .spinner-grow-sm
+//- .
+//- .btn-primary
+//- .btn-secondary
+//- .btn-success 
+//- .btn-info
+//- .btn-warning
+//- .btn-danger
+//- .btn-light
+//- .btn-dark
+//- .btn-link
+//- .btn-outline-primary
+//- .btn-outline-secondary
+//- .btn-outline-success
+//- .btn-outline-info
+//- .btn-outline-warning
+//- .btn-outline-danger
+//- .btn-outline-light
+//- .btn-outline-dark
+//- .
+//- .primary   #007BFF
+//- .secondary #6C757D
+//- .success   #28A745
+//- .danger    #DC3545
+//- .warning   #FFC107
+//- .info      #17A2B8
+//- .light     #F8F9FA
+//- .dark      #343A40
+//- .white     #FFFFFF
+//- .transparent
 
-//- spinner-border 
-//- spinner-border-sm
-//- spinner-grow 
-//- spinner-grow-sm
-
-//- btn-primary
-//- btn-secondary
-//- btn-success 
-//- btn-info
-//- btn-warning
-//- btn-danger
-//- btn-light
-//- btn-dark
-//- btn-link
-//- btn-outline-primary
-//- btn-outline-secondary
-//- btn-outline-success
-//- btn-outline-info
-//- btn-outline-warning
-//- btn-outline-danger
-//- btn-outline-light
-//- btn-outline-dark
