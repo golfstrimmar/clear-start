@@ -68,6 +68,40 @@ section#work.work
         +work-item("work__item","assets/img/work/tie.svg","134","Works witn happers")
 
 
+//- --------------section#try.try-------------------------
+//- --------------section#try.try-------------------------
+//- --------------section#try.try-------------------------
+//- --------------section#try.try-------------------------
+mixin try-item(img,title,text)
+        .try-plaza__item.col-md-4.bg-secondary.row.no-gutters.align-items-center.py-2.pl-2.mb-5
+          .try-plaza__img.col-2
+            img(src=img,alt="img")
+          .col-10.pl-3
+            .try-plaza__title 
+              h2=title
+            .try-plaza__description.Text-Style-4=text
+
+section#try.try
+  .try__wrapper.bg-info
+    .ibg.bg
+      img(src="assets/img/",alt="img")
+    .container
+      .try-plaza__body.row.no-gutters.justify-content-around.bg-success.py-4
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        .w-100
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        .w-100
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        +try-item("assets/img/work/tie.svg","12345","samething")
+
+
+
+
+
+
+
 
 //- https://html5css.ru/bootstrap4/bootstrap_ref_all_classes.php
 //- .d-none
