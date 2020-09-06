@@ -1,6 +1,7 @@
 //-- этот import нужно подключать в каждый файл, чтобы jquery работала
 import $ from "jquery";
 // ------------------------------------------------
+
 // <!-- №1 кнопка с выездом -->
 $(document).ready(function () {
   $(".btn-6")
@@ -138,90 +139,84 @@ instagramFeed(".instagram-images");
 
 
 // ----------------- #6 счетчик spincrement -------------------------
-    $(document).ready(function () {
-      var show = true;
-      var countbox = ".int-fact-counters";
-      $(window).on("scroll load resize", function () {
-        if (!show) return false;
+    // $(document).ready(function () {
+    //   var show = true;
+    //   var countbox = ".fct-counters";
+    //   $(window).on("scroll resize", function () {
+    //     if (!show) return false;
 
-        var w_top = $(window).scrollTop();
-        var e_top = $(countbox).offset().top;
+    //     var w_top = $(window).scrollTop();
+    //     var e_top = $(countbox).offset().top;
 
-        var w_height = $(window).height();
-        var d_height = $(document).height();
+    //     var w_height = $(window).height();
+    //     var d_height = $(document).height();
 
-        var e_height = $(countbox).outerHeight();
+    //     var e_height = $(countbox).outerHeight();
 
-        if (
-          w_top + 200 >= e_top ||
-          w_height + w_top == d_height ||
-          e_height + e_top < w_height
-        ) {
-          $(".spincrement").spincrement({
-            thousandSeparator: "",
-            duration: 8000,
-          });
-          show = false;
-        }
-      });
-    });
+    //     if (
+    //       w_top + 200 >= e_top ||
+    //       w_height + w_top == d_height ||
+    //       e_height + e_top < w_height
+    //     ) {
+    //       $(".spincrement").spincrement({
+    //         thousandSeparator: "",
+    //         duration: 8000,
+    //       });
 
- class Spincrement {
-   constructor() {
-     this.selector = ".spincrement";
-     this.duration = 8000;
-   }
-   init() {
-     let self = this;
-     $(this.selector).each(function () {
-       $(window).scroll(() => {
-         const parent = $(this).attr("data-parent");
-         let parentOffset = $(this).attr("data-parent-offset");
-         if (typeof parentOffset === "undefined") {
-           parentOffset = 0;
-         }
-         let offsetTop = $(this).closest(parent).offset().top;
-         let topobgj = offsetTop - parseInt(parentOffset);
-         let scrol = pageYOffset;
-         if (topobgj < scrol) {
-           $(this).spincrement({
-             duration: self.duration,
-           });
-         }
-       });
-     });
-   }
- }
+    //       show = false;
+    //     }
+    //   });
+    // });
 
 
 
 
 //-----№7-------- блок выезжает-заезжает  по скролу страницы----
-let windowOffset;
-let Caramba = $("#caramba");
-let lastScrollTop1 = 0;
-let xCaramba = 0; 
+// let windowOffset;
+// let Caramba = $("#caramba");
+// let lastScrollTop1 = 0;
+// let xCaramba = 0; 
 
-$(window).on('scroll', function () {
-      windowOffset = window.pageYOffset;
-         if (
-           windowOffset >= Caramba.offset().top - viewPort &&
-           windowOffset <= Caramba.offset().top + 200
-         ) {
-           let st1 = $(this).scrollTop();
-           if (st1 > lastScrollTop1) {
-             xCaramba -= 2;
-             Caramba.parent().css(
-               "transform",
-               "translateX(" + xsomeText + "px)"
-             );
-           } else {
-             xCaramba += 2;
-             Caramba.parent().css(
-               "transform",
-               "translateX(" + xCaramba + "px)"
-             );
-           }
-           lastScrollTop1 = st1;
-         }
-});
+// $(window).on('scroll', function () {
+//       windowOffset = window.pageYOffset;
+//          if (
+//            windowOffset >= Caramba.offset().top - viewPort &&
+//            windowOffset <= Caramba.offset().top + 200
+//          ) {
+//            let st1 = $(this).scrollTop();
+//            if (st1 > lastScrollTop1) {
+//              xCaramba -= 2;
+//              Caramba.parent().css(
+//                "transform",
+//                "translateX(" + xsomeText + "px)"
+//              );
+//            } else {
+//              xCaramba += 2;
+//              Caramba.parent().css(
+//                "transform",
+//                "translateX(" + xCaramba + "px)"
+//              );
+//            }
+//            lastScrollTop1 = st1;
+//          }
+// });
+let portfolio = $("#caramba");
+  let lastScrollTop3 = 0;
+  let xAbout = 0;
+      $(window).on("scroll", function () {
+        windowOffset = window.pageYOffset;
+        if (
+          windowOffset >= portfolio.offset().top - viewPort &&
+          windowOffset <= portfolio.offset().top + 200
+        ) {
+          let st3 = $(this).scrollTop();
+          if (st3 > lastScrollTop3) {
+            xAbout += 2;
+            portfolio.parent().css("transform", "translateX(" + xAbout + "px)");
+          } else {
+            xAbout -= 2;
+            portfolio.parent().css("transform", "translateX(" + xAbout + "px)");
+          }
+          lastScrollTop3 = st3;
+        }
+      });
