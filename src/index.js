@@ -8,7 +8,9 @@ import './scss/style.scss';
 
 
 
+// import "./js/jquery.spincrement.min.js";  ???не работает решить???
 import './js/common.js'
+import "./js/bagajnik.js";
 // import './css/main.css';
 // import "./js/bootstrap.bundle";
 // import "./js/bootstrap";
@@ -32,3 +34,6 @@ $(document).ready(function () {
   $(".title").html("если виден текст, то на сайте работает jquery потому что  сам div и свойства данного div  зашли через js");
 
  });
+
+
+
