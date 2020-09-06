@@ -1,5 +1,5 @@
 .wrapper {
-  overflow: hidden;
+  // overflow: hidden;   нельзя! не работают stiky
   @include fdc;
   min-height: 100vh;
 }
