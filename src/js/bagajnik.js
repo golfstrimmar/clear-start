@@ -225,10 +225,13 @@ instagramFeed(".instagram-images");
 //-----------№8------ блок выезжает плавно при достижении края окна расположения блока.
       $(window).scroll(function () {
         let distanceTop = $("#slid").offset().top;
+        console.log(distanceTop);
         let viewPort = window.innerHeight;
-        // window.pageYOffset-это расстояние от верхнего края документа. не от края окна.
-        // let viewPort = window.innerHeight; -высота от края окна
-        // если if (window.pageYOffset > distanceTop) то это когда блок упрется в верх окна. ну то есть растояние от верха документа до блока и расстояние от "верха документа" будут равны. 
+        // console.log(window.innerHeight);
+        //let distanceTop = $("#slid").offset().top; - это расстояние  от верхнего края документа до  начала блока #slid
+        // window.pageYOffset-это расстояние от верхнего края документа до верхнего края окна
+        // let viewPort = window.innerHeight; -высота видимой части окна (экран)
+        // если if (window.pageYOffset > distanceTop) то это когда блок упрется в верх окна. ну то есть растояние от верха документа до блока и расстояние от "верха документа" будут равны.
         // если if (window.pageYOffset > distanceTop - viewPort ) описывает ситуацию при которой блок будет только появляться снизу окна.- viewPort просто дает отступ вниз на размер окна/ расстояние от верха документа увеличилось на высоту окна.
         // if (window.pageYOffset > distanceTop - viewPort + 150) { это значит немного уменьшаем отступ на 150px. в этот момент скрипт и сработает
         if (window.pageYOffset > distanceTop - viewPort + 150) {
@@ -237,6 +240,7 @@ instagramFeed(".instagram-images");
             transform: "translate(10%)",
             opacity: 1,
             "font-size": "80px",
+            "background-color": "green",
             transition: "transform 1s, opacity 2s, color 3s",
           });
         } else {
