@@ -223,30 +223,32 @@ instagramFeed(".instagram-images");
 
 
 //-----------№8------ блок выезжает плавно при достижении края окна расположения блока.
-      $(window).scroll(function () {
-        let distanceTop = $("#slid").offset().top;
-        console.log(distanceTop);
-        let viewPort = window.innerHeight;
-        // console.log(window.innerHeight);
-        //let distanceTop = $("#slid").offset().top; - это расстояние  от верхнего края документа до  начала блока #slid
-        // window.pageYOffset-это расстояние от верхнего края документа до верхнего края окна
-        // let viewPort = window.innerHeight; -высота видимой части окна (экран)
-        // если if (window.pageYOffset > distanceTop) то это когда блок упрется в верх окна. ну то есть растояние от верха документа до блока и расстояние от "верха документа" будут равны.
-        // если if (window.pageYOffset > distanceTop - viewPort ) описывает ситуацию при которой блок будет только появляться снизу окна.- viewPort просто дает отступ вниз на размер окна/ расстояние от верха документа увеличилось на высоту окна.
-        // if (window.pageYOffset > distanceTop - viewPort + 150) { это значит немного уменьшаем отступ на 150px. в этот момент скрипт и сработает
-        if (window.pageYOffset > distanceTop - viewPort + 150) {
-          $("#slid-title").css({
-            color: "#9fff0f",
-            transform: "translate(10%)",
-            opacity: 1,
-            "font-size": "80px",
-            "background-color": "green",
-            transition: "transform 1s, opacity 2s, color 3s",
-          });
-        } else {
-          $("#slid-title").css({
-            opacity: 0,
-            transform: "translate(-100vw)",
-          });
-        }
-      });
+// -------------------события по скролу страницы---------------------------
+// let distanceTop = $("#slid").offset().top;    -  расстояние от верхнего края документа до начала блока #slid
+// window.pageYOffset                            -  расстояние от верхнего края документа до верхнего края окна
+// let viewPort = window.innerHeight;            -  высота видимой части окна (экран)
+//  if (window.pageYOffset > distanceTop)    -  условие срабатывает когда документ проскролится на растояние больше чем растояние от верха документа до верха блока. то есть сейчас верх блока касается верха окна 
+//  if (window.pageYOffset > distanceTop - viewPort )    --условие сработает когда документ проскролится на расстояние больше чем отступ от верха у блока плюс размер страницы. то есть сейчас блок тоько появляется внизу экрана
+// if (window.pageYOffset > distanceTop - viewPort + 150)  это значит немного уменьшаем отступ на 150px. сейс блок немного выехал снизу экрана и на этот момент цепляется какой-то метод. например можно сделать его выезд, изменениее цвета, и т.д. и заезд обратно если скролить обратно
+
+
+let distanceTop = $("#slid").offset().top;
+let viewPort = window.innerHeight;
+
+$(window).scroll(function () {
+if (window.pageYOffset > distanceTop - viewPort + 150) {
+$("#slid-title").css({
+color: "#9fff0f",
+transform: "translate(10%)",
+opacity: 1,
+"font-size": "80px",
+"background-color": "green",
+transition: "transform 1s, opacity 2s, color 3s",
+});
+} else {
+$("#slid-title").css({
+opacity: 0,
+transform: "translate(-100vw)",
+});
+}
+});
