@@ -200,23 +200,49 @@ instagramFeed(".instagram-images");
 //            lastScrollTop1 = st1;
 //          }
 // });
-let portfolio = $("#caramba");
-  let lastScrollTop3 = 0;
-  let xAbout = 0;
-      $(window).on("scroll", function () {
-        windowOffset = window.pageYOffset;
-        if (
-          windowOffset >= portfolio.offset().top - viewPort &&
-          windowOffset <= portfolio.offset().top + 200
-        ) {
-          let st3 = $(this).scrollTop();
-          if (st3 > lastScrollTop3) {
-            xAbout += 2;
-            portfolio.parent().css("transform", "translateX(" + xAbout + "px)");
-          } else {
-            xAbout -= 2;
-            portfolio.parent().css("transform", "translateX(" + xAbout + "px)");
-          }
-          lastScrollTop3 = st3;
+// let portfolio = $("#caramba");
+//   let lastScrollTop3 = 0;
+//   let xAbout = 0;
+//       $(window).on("scroll", function () {
+//         windowOffset = window.pageYOffset;
+//         if (
+//           windowOffset >= portfolio.offset().top - viewPort &&
+//           windowOffset <= portfolio.offset().top + 200
+//         ) {
+//           let st3 = $(this).scrollTop();
+//           if (st3 > lastScrollTop3) {
+//             xAbout += 2;
+//             portfolio.parent().css("transform", "translateX(" + xAbout + "px)");
+//           } else {
+//             xAbout -= 2;
+//             portfolio.parent().css("transform", "translateX(" + xAbout + "px)");
+//           }
+//           lastScrollTop3 = st3;
+//         }
+//       });
+
+
+//-----------№8------ блок выезжает плавно при достижении края окна расположения блока.
+      $(window).scroll(function () {
+        let distanceTop = $("#slid").offset().top;
+        let viewPort = window.innerHeight;
+        // window.pageYOffset-это расстояние от верхнего края документа. не от края окна.
+        // let viewPort = window.innerHeight; -высота от края окна
+        // если if (window.pageYOffset > distanceTop) то это когда блок упрется в верх окна. ну то есть растояние от верха документа до блока и расстояние от "верха документа" будут равны. 
+        // если if (window.pageYOffset > distanceTop - viewPort ) описывает ситуацию при которой блок будет только появляться снизу окна.- viewPort просто дает отступ вниз на размер окна/ расстояние от верха документа увеличилось на высоту окна.
+        // if (window.pageYOffset > distanceTop - viewPort + 150) { это значит немного уменьшаем отступ на 150px. в этот момент скрипт и сработает
+        if (window.pageYOffset > distanceTop - viewPort + 150) {
+          $("#slid-title").css({
+            color: "#9fff0f",
+            transform: "translate(10%)",
+            opacity: 1,
+            "font-size": "80px",
+            transition: "transform 1s, opacity 2s, color 3s",
+          });
+        } else {
+          $("#slid-title").css({
+            opacity: 0,
+            transform: "translate(-100vw)",
+          });
         }
       });
