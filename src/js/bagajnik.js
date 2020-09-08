@@ -236,7 +236,7 @@ let distanceTop = $("#slid").offset().top;
 let viewPort = window.innerHeight;
 
 $(window).scroll(function () {
-if (window.pageYOffset > distanceTop - viewPort + 150) {
+if (window.pageYOffset > distanceTop - viewPort + 250) {
 $("#slid-title").css({
 color: "#9fff0f",
 transform: "translate(10%)",
@@ -252,3 +252,36 @@ transform: "translate(-100vw)",
 });
 }
 });
+
+//--------------------- туда-сюда(пока не рабатет)
+// let distanceTop = $("#slid").offset().top;
+// let viewPort = window.innerHeight;
+// let xSlid = 0;
+
+// $(window).scroll(function () {
+
+// if (
+//   window.pageYOffset >= distanceTop - viewPort &&
+//   window.pageYOffset <= distanceTop + 200
+// )
+//  {
+
+// let st = $(this).scrollTop();
+// let lastScrollTop = 0;
+
+// if (st > lastScrollTop) {
+//          xSlid += 2;
+//          $("#slid-title").css({
+//            transform: "translateX(" + xSlid + "px)",
+//          });
+//   } else {
+//            xSlid -= 2;
+//            $("#slid-title").css({
+//              transform: "translateX(" + xSlid + "px)",
+//            });
+//           }
+//           lastScrollTop = st;
+//   } 
+// });
+
+
