@@ -4,7 +4,7 @@
     url(../fonts/DMSans-Bold.ttf) format("truetype"),
     url(../fonts/DMSans-Bold}) format("embedded-opentype"),
     url(../fonts/DMSans-Bold.svg) format("svg"),
-    url(../fonts/DMSans-Bold.otf), url(/assets/fonts/DMSans-Bold.eot);
+    url(../fonts/DMSans-Bold.otf), url(../fonts/DMSans-Bold.eot);
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -16,7 +16,7 @@
     url(../fonts/DMSans-Medium.ttf) format("truetype"),
     url(../fonts/DMSans-Medium}) format("embedded-opentype"),
     url(../fonts/DMSans-Medium.svg) format("svg"),
-    url(../fonts/DMSans-Medium.otf), url(/assets/fonts/DMSans-Medium.eot);
+    url(../fonts/DMSans-Medium.otf), url(../fonts/DMSans-Medium.eot);
   font-weight: medium;
   font-style: normal;
   font-stretch: normal;
@@ -28,7 +28,7 @@
     url(../fonts/DMSans-Regular.ttf) format("truetype"),
     url(../fonts/DMSans-Regular}) format("embedded-opentype"),
     url(../fonts/DMSans-Regular.svg) format("svg"),
-    url(../fonts/DMSans-Regular.otf), url(/assets/fonts/DMSans-Regular.eot);
+    url(../fonts/DMSans-Regular.otf), url(../fonts/DMSans-Regular.eot);
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -39,7 +39,7 @@
     url(../fonts/Poppins-Bold.ttf) format("truetype"),
     url(../fonts/Poppins-Bold}) format("embedded-opentype"),
     url(../fonts/Poppins-Bold.svg) format("svg"),
-    url(../fonts/Poppins-Bold.otf), url(/assets/fonts/Poppins-Bold.eot);
+    url(../fonts/Poppins-Bold.otf), url(../fonts/Poppins-Bold.eot);
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -51,7 +51,7 @@
     url(../fonts/CeremoniousOne.ttf) format("truetype"),
     url(../fonts/CeremoniousOne}) format("embedded-opentype"),
     url(../fonts/CeremoniousOne.svg) format("svg"),
-    url(../fonts/CeremoniousOne.otf), url(/assets/fonts/CeremoniousOne.eot);
+    url(../fonts/CeremoniousOne.otf), url(../fonts/CeremoniousOne.eot);
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -61,7 +61,7 @@
   src: local(icomoon), url(../fonts/icomoon.woff) format("woff"),
     url(../fonts/icomoon.ttf) format("truetype"),
     url(../fonts/icomoon}) format("embedded-opentype"),
-    url(../fonts/icomoon.svg) format("svg"), url(/assets/fonts/icomoon.otf),
+    url(../fonts/icomoon.svg) format("svg"), url(../fonts/icomoon.otf),
     url(../fonts/icomoon.eot);
   font-weight: 400;
   font-style: normal;
