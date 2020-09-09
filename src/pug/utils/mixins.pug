@@ -88,15 +88,4 @@ mixin projects-galery(img,text)
                 img(src="assets/img/projects/projects-plaha-big.png",alt="img")
                 span=text
 //- -----------------------------------
-mixin work-item(img,title,text)
-      .work__item.item.col-md-4.row.no-gutters
-          .item__img.col-sm-12.col-md-2.align-self-center
-            img(src="assets/img/work/tie.svg",alt="img")
-          .item__column.col-md-10
-            .item__title
-              h5.text-40-52-bold-0D0D0D=title
-            .item__text.text-28-34-600-fff=text
 
-mixin nav-item(link,text)
-  li
-    a(href=link + ".html")= text
