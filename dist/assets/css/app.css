@@ -1,7 +1,7 @@
 @font-face {
   font-family: DMSans;
   src: local(DMSans-Bold), url(../fonts/DMSans-Bold.woff) format("woff"),
-    url(/../fonts/DMSans-Bold.ttf) format("truetype"),
+    url(../fonts/DMSans-Bold.ttf) format("truetype"),
     url(../fonts/DMSans-Bold}) format("embedded-opentype"),
     url(../fonts/DMSans-Bold.svg) format("svg"),
     url(../fonts/DMSans-Bold.otf), url(/assets/fonts/DMSans-Bold.eot);
