@@ -1,74 +1,28 @@
 include ../utils/mixins
 
 header#header.header
-  .header__body.container
-    a.header__logo(href="#")
-      img(src="assets/img/header/logo.png",alt="logo")  
-    .header__discription Надёжные партнеры дизайнеров 
-      p фабрика производства мебели на заказ 
-      p работаем с 2010 года по Москве и МО 200 км
-    .header1__burger.icon-menu-1
-      span
-      span
-      span
-      .header1__slide.header1-slide.header__slide
-        .header1-slide__body
-           nav.header1-slide-list
-            ul
-              li
-                a.header1-slide__link(href="#") Главная  
-              li
-                a.header1-slide__link(href="#") Проекты  
-    .header1__text Меню
-    .header__icons.header-icons
-      .header-icons__body
-        a.tel(href="#")
-          img(src="assets/img/header/tg.svg",alt="img")
-        a.wa(href="#")
-          img(src="assets/img/header/wa.svg",alt="img")
-    .header__tel.header-tel
-      .header-tel__body
-        .header-tel__phone +7 (926) 844-43-33
-        a.header-tel__text(href="#")
-          span Перезвоните мне
- 
-
-
-
-
-section#create.create
-  .create__wrapper
-    .bg
-      img(src="assets/img/header/header-bg.png",alt="header-bg")
+  .header__wrapper
     .container
-      .create__body
-        h2.create__title  Создадим дизайнерскую мебель, 
-          br
-          span для вашего проекта, как на картинке точно 
-          br
-          span в срок, избавив вас от стресса и хлопот
-        .create__text
-          img(src="assets/img/header/win1.svg",alt="")
-          p Создали вместе с дизайнерами 
-          p свыше 3250 объектов за последние 8 лет
-        .create__button
-          .button-color
-            a.button-color__link(href="#")
-              span Обсудить проект
-          img(src="assets/img/header/img-1.png",alt="")
-          .create__text1 Подскажем  сильные 
-            br
-            span и слабые стороны вашего проекта 
-            br
-            span с технологического процесса
-        .content-create__player.player
-          .player__body
-            .player__text От звонка до установки мебели. Покажем за 4 мин
-            a.player__triangle(href="#")
-              img(src="assets/img/header/arrow-color.svg",alt="img")
-            .player__arc
-              img(src="assets/img/header/Mask-Group.png",alt="img")
-            .player__arc.player__arc_big
-              img(src="assets/img/header/Mask-Group-big.png",alt="img") 
-
-
+      .header__body.row.no-gutters
+        .header__logo.mr-auto.ml-4.ml-lg-0  
+          img(src="assets/img/header/logo-dark.svg",alt="img") 
+        .header__cross.open
+          span.icon-bars-solid
+        nav#header-nav.header__nav.col-md-12.col-lg-9.header-nav
+          .header__logo.header__logo_white.ml-4
+            img(src="assets/img/header/logo-white.svg",alt="img")
+          .header__cross.close
+            span.icon-times-solid
+          ul.header-nav__body.row.no-gutters
+            li.header-nav__item
+              a.header-nav__link(href="#!") Home
+            li.header-nav__item
+              a.header-nav__link(href="#!") Portfolio
+            li.header-nav__item
+              a.header-nav__link(href="#!") About us
+            li.header-nav__item
+              a.header-nav__link(href="#!") What we do
+            li.header-nav__item
+              a.header-nav__link(href="#!") Work process
+            li.header-nav__item
+              a.header-nav__link(href="#!") Contact us

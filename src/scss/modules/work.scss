@@ -1,32 +1,78 @@
 @import "../utils/mixins";
 
+
+
+// ----------------------------------
+.porttem {
+  &__wrapper {
+    width: 100%;
+    position: relative;
+    background-color: $white-two;
+    padding: 9px 0 190px 0;
+  }
+  &__body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .porttem-plaza__column {
+      width: 379px;
+      height: 394px;
+      background-color: rgba(255, 255, 255, 0.33);
+      margin: 19px 0 0 0;
+      padding: 0 0 20px 0;
+      .porttem-plaza__line {
+        padding: 0 0 34px 0;
+        &:nth-child(3) {
+          .porttem-plaza__tile {
+            margin: 0 9px 20px 0;
+          }
+        }
+      }
+      .porttem-plaza__tile {
+        margin: 2px 38px 0 0;
+      }
+
+      .porttem-plaza__return {
+        width: 114px;
+        height: 37px;
+        background-color: rgba(255, 255, 255, 0.7);
+        @include center();
+        margin: -10px 0 0 -20px;
+      }
+    }
+    .porttem__frame {
+      position: absolute;
+      width: 248px;
+      height: 496px;
+      top: 82px;
+      left: 647px;
+    }
+  }
+}
+
+// ----------------------------------
 .about {
   &__wrapper {
     width: 100%;
     //  height: 500px;
     position: relative;
-    background-color: #0E0E0E;
+    background-color: #0e0e0e;
     .container-fluid {
       padding: 0 22px;
     }
-    .sticky-container{
+    .sticky-container {
       @include media-breakpoint-down(md) {
         display: none;
       }
     }
-    .about__sliding-container{
+    .about__sliding-container {
       position: absolute;
       width: 80vw;
-      // height: 100%;
       top: 0%;
       left: 0%;
-      // overflow: hidden;
       white-space: nowrap;
-     
-      // .about__title{
-      //    @include anim(0.5s);
-      // }
-    } 
+    }
   }
   &__body {
     width: 100%;
@@ -34,26 +80,23 @@
     position: relative;
     padding: 4% 0;
     @include media-breakpoint-down(sm) {
-          padding: 25% 0 4%;
-
+      padding: 25% 0 4%;
     }
     .about__button {
       position: absolute;
       top: 11.5%;
       right: 9.2%;
-          @include media-breakpoint-down(sm) {
-            top: 5%;
-          }
+      @include media-breakpoint-down(sm) {
+        top: 5%;
+      }
     }
-
   }
   .about__plaza {
     margin: 336px 0 0 0;
     @include media-breakpoint-down(md) {
-    margin: 90px 0 0 0;
+      margin: 90px 0 0 0;
     }
     .about__discription {
-   
       p {
         padding: 0 127px 16px 0;
         @include media-breakpoint-down(lg) {
@@ -64,7 +107,6 @@
   }
   .about-plaza__body {
     padding: 102px 0 0 0;
-
     .about-plaza__column {
       &_high {
         position: relative;
@@ -75,13 +117,13 @@
           top: -214px;
           left: 0%;
           transform: translate(127px);
-               @media (max-width:1370px){
+          @media (max-width: 1370px) {
             top: -168px;
-    transform: translate(106px);
-          } 
+            transform: translate(106px);
+          }
           &:last-child {
             transform: translate(381px);
-               @media (max-width:1370px){
+            @media (max-width: 1370px) {
               transform: translate(317px);
             }
           }
@@ -95,7 +137,7 @@
       img {
         width: 222px;
         height: 100%;
-        @media (max-width:1370px){
+        @media (max-width: 1370px) {
           width: 180px;
           height: 200px;
           margin: 0;

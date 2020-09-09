@@ -11,6 +11,7 @@ import './scss/style.scss';
 // import "./js/jquery.spincrement.min.js";  ???не работает решить???
 import './js/common.js'
 import "./js/bagajnik.js";
+
 // import './css/main.css';
 // import "./js/bootstrap.bundle";
 // import "./js/bootstrap";

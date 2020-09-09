@@ -109,6 +109,46 @@ font-stretch: normal;
 }
 
 
+@font-face {
+font-family: icomoon;
+src:
+local(icomoon),
+url('/assets/fonts/icomoon.woff') format('woff'),
+url('/assets/fonts/icomoon.ttf') format('truetype'),
+url('/assets/fonts/icomoon}') format('embedded-opentype'),
+url('/assets/fonts/icomoon.svg  ') format('svg'),
+url('/assets/fonts/icomoon.otf  '),
+url('/assets/fonts/icomoon.eot  ');
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-times-solid:before {
+  content: "\e900";
+}
+.icon-bars-solid:before {
+  content: "\e901";
+}
+
+
+
+
+
+
+
 .Text-Style-6 {
   font-family: DMSans;
   font-size: 300px;
@@ -175,18 +215,65 @@ font-stretch: normal;
   color: $white;
 }
 
+.Text-Style-11 {
+  font-family: DMSans;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.44;
+  color: $black-two;
+}
 
+.Text-Style-12 {
+  font-family: DMSans;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: #0d0001;
+}
 
+.Text-Style-13 {
+  font-family: DMSans;
+  font-size: 14px;
+  font-weight: bold;
+  color: $pinkish-grey;
+}
 
+.Text-Style-14 {
+  font-family: DMSans;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0d0001;
+}
 
+.Text-Style-15 {
+  font-family: DMSans;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: $white;
+}
 
+.Text-Style-16 {
+  font-family: DMSans;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.81);
+}
 
-
-
-
-
-
-
+@mixin Text-Style-17 {
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: $black;
+}
+.Text-Style-17 {
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: $black;
+}
 
 
 

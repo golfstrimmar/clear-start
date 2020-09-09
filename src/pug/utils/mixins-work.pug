@@ -4,6 +4,12 @@ mixin button-red(text)
 mixin button-grey(text)
   button.btn.button__grey.align-items-center.row.no-gutters
     span.m-auto.Text-Style-3=text
+mixin button-white(text)
+  button.btn.button__white.align-items-center.row.no-gutters
+    span.m-auto.Text-Style-12=text
+mixin button-black(text)
+  button.btn.button__black.align-items-center.row.no-gutters
+    span.m-auto.Text-Style-15=text
 
 mixin plaza-item(text1,text2,text3,text4,text5)
   .footer-plaza__item.col-md-3
@@ -36,3 +42,5 @@ mixin sticky(BigLetter,content)
     .sticky
       span.Text-Style-8=BigLetter
       span.Text-Style-10=content 
+mixin tile-work(text)
+  .porttem-plaza__tile.Text-Style-14=text

@@ -5,6 +5,8 @@
 @import "utils/reset";
 @import "utils/slick";
 
+//---------- подключение font avesome
+
 
 // ----подключение bootstrap-------------------- 
 // ---------это вообще все----------------------
@@ -67,8 +69,7 @@
 // @import "modules/calc"; 
 // @import "modules/pro"; 
 
-// @import "common/header";
-// @import "common/header1";
+@import "common/header";
 @import "common/common";
 @import "common/animals";
 @import "common/bagajnik";

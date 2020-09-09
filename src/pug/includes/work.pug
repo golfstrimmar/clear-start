@@ -1,60 +1,124 @@
 include ../utils/mixins-work
 
-section#about.about
-  .about__wrapper
-    #sliding.about__sliding-container
-      #sliding-title.about__title.Text-Style-6 About us
-    .container-fluid 
-      .about__body.row.no-gutters.flex-column
-        .about__button 
-          +button-grey("Know more")
-        
-        +sticky("А","bout us")  
-        .about__plaza.about-plaza.row.no-gutters
-          .about-plaza__body.col-xl-7.col-lg-9
-            .about-plaza__column.about-plaza__column_high.row.no-gutters
-              .about-plaza__item
-                img(src="assets/img/work/clutch.png",alt="img")
-              .about-plaza__item.d-none.d-md-block
-                img(src="assets/img/work/polygon.png",alt="img")
-            .w-100
-            .about-plaza__column.row.no-gutters
-              .about-plaza__item.d-none.d-sm-block 
-                img(src="assets/img/work/polygon.png",alt="img")
-              .about-plaza__item
-                img(src="assets/img/work/upwork.png",alt="img")
-              .about-plaza__item.d-none.d-md-block
-                img(src="assets/img/work/polygon.png",alt="img")
-          .about__discription.col-lg-3.col-xl-5.px-5.px-lg-0 
-            p.Text-Style-9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas   varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim   justo. Vestibulum aliquam hendrerit molestie.
-            p.Text-Style-9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas   varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim   justo. Vestibulum aliquam hendrerit molestie.   
+
+//- section#porttem.porttem
+//-   .porttem__wrapper
+//-     .container
+//-       .porttem__body.row.no-gutters.flex-column
+//-         .porttem__title 
+//-           span.Text-Style-8 R
+//-           span.Text-Style-11 entorr
+//-         .porttem__plaza.porttem-plaza.no-gutters.pt-4
+//-           .porttem-plaza__body.col-md-4.row.no-gutters
+//-             .porttem__button.mr-4
+//-               +button-white("Read case info")
+//-             .porttem__button 
+//-               +button-white("Desktop version")
+//-             .w-100
+//-             .porttem-plaza__column.col-md-12.row.no-gutters.pt-5.pb-5.pl-4
+//-               .porttem-plaza__line.col-md-12.row.no-gutters
+//-                 .porttem-plaza__title.Text-Style-13.pb-3 Services  
+//-                 .w-100
+//-                 .porttem-plaza__tile.row.no-gutters.align-items-center
+//-                   .porttem-plaza__img.mr-2
+//-                     img(src="assets/img/work/work-svg-1.svg",alt="img")
+//-                   .porttem-plaza__text.Text-Style-14 Design
+//-                 .porttem-plaza__tile.row.no-gutters.align-items-center
+//-                   .porttem-plaza__img.mr-2
+//-                     img(src="assets/img/work/work-svg-2.svg",alt="img")
+//-                   .porttem-plaza__text.Text-Style-14 Frontend
+//-                 .porttem-plaza__tile.row.no-gutters.align-items-center
+//-                   .porttem-plaza__img.mr-2
+//-                     img(src="assets/img/work/work-svg-3.svg",alt="img")
+//-                   .porttem-plaza__text.Text-Style-14 Backend 
+//-               .porttem-plaza__line.col-md-12.row.no-gutters
+//-                 .porttem-plaza__title.Text-Style-13.pb-3 Platforms 
+//-                 .w-100
+//-                 +tile-work("Desktop")
+//-                 +tile-work("Mobile")
+//-               .porttem-plaza__line.col-md-12.row.no-gutters 
+//-                 .porttem-plaza__title.Text-Style-13.pb-3 Tags 
+//-                 .w-100
+//-                 .col-4
+//-                   +tile-work("Responsive")
+//-                 .col-4
+//-                   +tile-work("Dashboard")
+//-                 .col-4
+//-                   +tile-work("Highload")
+//-                 .w-100
+//-                 .col-4
+//-                   +tile-work("WEB-Service")
+//-                 .col-4
+//-                   +tile-work("Concepts")
+//-                 .col-4
+//-                   +tile-work("Ecommerce")
+//-               .porttem-plaza__line.col-md-12.row.no-gutters.mb-4.mt-1
+//-                 a.porttem-plaza__link(href="#!").col-md-auto.mr-3
+//-                   img(src="assets/img/work/ball.svg",alt="img")
+//-                 a.porttem-plaza__link(href="#!").col-md-auto.mr-3
+//-                   img(src="assets/img/work/be.svg",alt="img")
+//-                 .porttem-plaza__button.col-md-auto.ml-2
+//-                   +button-black("See Live Site")
+//-               a.porttem-plaza__return.Text-Style-16(href="#!") To portfolio
+//-         .porttem__frame
+//-           img(src="assets/img/work/iphone.png",alt="img")
+
+
+//- section#about.about
+//-   .about__wrapper
+//-     #sliding.about__sliding-container
+//-       #sliding-title.about__title.Text-Style-6 About us
+//-     .container-fluid 
+//-       .about__body.row.no-gutters.flex-column
+//-         .about__button 
+//-           +button-grey("Know more")
+
+//-         +sticky("А","bout us")  
+//-         .about__plaza.about-plaza.row.no-gutters
+//-           .about-plaza__body.col-xl-7.col-lg-9
+//-             .about-plaza__column.about-plaza__column_high.row.no-gutters
+//-               .about-plaza__item
+//-                 img(src="assets/img/work/clutch.png",alt="img")
+//-               .about-plaza__item.d-none.d-md-block
+//-                 img(src="assets/img/work/polygon.png",alt="img")
+//-             .w-100
+//-             .about-plaza__column.row.no-gutters
+//-               .about-plaza__item.d-none.d-sm-block 
+//-                 img(src="assets/img/work/polygon.png",alt="img")
+//-               .about-plaza__item
+//-                 img(src="assets/img/work/upwork.png",alt="img")
+//-               .about-plaza__item.d-none.d-md-block
+//-                 img(src="assets/img/work/polygon.png",alt="img")
+//-           .about__discription.col-lg-3.col-xl-5.px-5.px-lg-0 
+//-             p.Text-Style-9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas   varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim   justo. Vestibulum aliquam hendrerit molestie.
+//-             p.Text-Style-9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas   varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim   justo. Vestibulum aliquam hendrerit molestie.   
 
 //- -------------------footer#footer.footer--------------------------------------
 //- -------------------footer#footer.footer--------------------------------------
 //- -------------------footer#footer.footer--------------------------------------
 //- -------------------footer#footer.footer--------------------------------------
-footer#footer.footer
-  .footer__wrapper
-    .ibg.bg
-      img(src="assets/img/work/footer-bg.png",alt="img")
-    .container
-      .footer__body.row.no-gutters
-        .footer__title.col-6
-          h2 Let<span>’</span>s Talk
-          .footer__discription.Text-Style We collaborate with ambitious people and brands. Let's chat about what we can do for you.
-        .footer__button
-          +button-red("Drop us a line")
-        .w-100
-        .footer__plaza.footer-plaza.col-md-12
-          .footer-plaza__body.row.no-gutters.justify-content-between
-            .footer-plaza__item.col-md-4.mr-auto
-              .footer-plaza__logo
-                img(src="assets/img/work/logo-dark.svg",alt="")
-              .footer-plaza__text.Text-Style-4 Victor Chmilenko 47, Kropyvnytskyi, 25006
-              .footer-plaza__text.Text-Style-4 097 700 3001
-              .footer-plaza__text.Text-Style-4 info@splitdev.pro
-            +plaza-item("Portfolio","Capabilities","Work process","About us","Contact us") 
-            +plaza-item("Dribbble","Behance","Instagram","Facebook","LinkedIn") 
+//- footer#footer.footer
+//-   .footer__wrapper
+//-     .ibg.bg
+//-       img(src="assets/img/work/footer-bg.png",alt="img")
+//-     .container
+//-       .footer__body.row.no-gutters
+//-         .footer__title.col-6
+//-           h2 Let<span>’</span>s Talk
+//-           .footer__discription.Text-Style We collaborate with ambitious people and brands. Let's chat about what we can do for you.
+//-         .footer__button
+//-           +button-red("Drop us a line")
+//-         .w-100
+//-         .footer__plaza.footer-plaza.col-md-12
+//-           .footer-plaza__body.row.no-gutters.justify-content-between
+//-             .footer-plaza__item.col-md-4.mr-auto
+//-               .footer-plaza__logo
+//-                 img(src="assets/img/work/logo-dark.svg",alt="")
+//-               .footer-plaza__text.Text-Style-4 Victor Chmilenko 47, Kropyvnytskyi, 25006
+//-               .footer-plaza__text.Text-Style-4 097 700 3001
+//-               .footer-plaza__text.Text-Style-4 info@splitdev.pro
+//-             +plaza-item("Portfolio","Capabilities","Work process","About us","Contact us") 
+//-             +plaza-item("Dribbble","Behance","Instagram","Facebook","LinkedIn") 
 //- ------------------section#work.work---------------------------------
 //- ------------------section#work.work---------------------------------
 //- ------------------section#work.work---------------------------------
