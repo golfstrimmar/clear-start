@@ -147,36 +147,50 @@ include ../utils/mixins-work
 //- --------------section#try.try-------------------------
 //- --------------section#try.try-------------------------
 //- --------------section#try.try-------------------------
-//- section#try.try
-//-   .try__wrapper.bg-info
-//-     .ibg.bg
-//-       img(src="assets/img/",alt="img")
-//-     .container
-//-       .try-plaza__body.row.no-gutters.justify-content-around.bg-success.py-4
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         .w-100
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         .w-100
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         +try-item("assets/img/work/tie.svg","12345","samething")  
+//- mixin list[img,title,text]
+//-   each item in items
+//-     .try-plaza__item.col-md-4.bg-secondary.row.no-gutters.align-items-center.py-2.pl-2.mb-5
+//-       .try-plaza__img.col-2
+//-         img(src=img,alt="img")
+//-       .col-10.pl-3
+//-         .try-plaza__title 
+//-           h2=title
+//-         .try-plaza__description.Text-Style-4=text
 
-          
-//- section#try.try
-//-   .try__wrapper.bg-info
-//-     .ibg.bg
-//-       img(src="assets/img/",alt="img")
-//-     .container
-//-       .try-plaza__body.row.no-gutters.justify-content-around.bg-success.py-4
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         .w-100
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         .w-100
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
-//-         +try-item("assets/img/work/tie.svg","12345","samething")
+
+
+
+
+
+
+//- код неудобный потому как внутри цикла ничего не поменять. миксины удобнее!!!
+section#try.try
+  .try__wrapper.bg-info
+    .container
+      .try-plaza__body.row.no-gutters.justify-content-around.bg-success.py-4
+        each item in tryitem 
+          .try-plaza__item.col-md-4.bg-secondary.row.no-gutters.align-items-center.py-2.pl-2.mb-5
+            .try-plaza__img.col-2
+              img(src=item.img,alt="img")
+            .col-10.pl-3
+              .try-plaza__title 
+                h2=item.title
+              .try-plaza__description.Text-Style-4=item.text
+
+
+//-  миксины удобнее!!!
+section#try.try
+  .try__wrapper.bg-info
+    .container
+      .try-plaza__body.row.no-gutters.justify-content-around.bg-success.py-4
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        .w-100
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        .w-100
+        +try-item("assets/img/work/tie.svg","12345","samething")
+        +try-item("assets/img/work/tie.svg","12345","samething")
 
 
 
