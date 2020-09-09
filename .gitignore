@@ -27,7 +27,7 @@ yarn-error.log
 
 # Build system
 node_modules
-dist/
+
 
 # IDE specific
 nbproject
