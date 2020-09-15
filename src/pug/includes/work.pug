@@ -192,9 +192,48 @@ section#try.try
         +try-item("assets/img/work/tie.svg","12345","samething")
         +try-item("assets/img/work/tie.svg","12345","samething")
 
+//- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! табы !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//- HTML:
+//- <div class="wrapper">
+//- 	<div class="tabs">
+//- 		<span class="tab">Вкладка 1</span>
+//- 		<span class="tab">Вкладка 2</span>
+//- 		<span class="tab">Вкладка 3</span>
+//- 	</div>
+//- 	<div class="tab_content">
+//- 		<div class="tab_item">Содержимое 1</div>
+//- 		<div class="tab_item">Содержимое 2</div>
+//- 		<div class="tab_item">Содержимое 3</div>
+//- 	</div>
+//- </div>
+ 
+//- jQuery:
+//- $(".tab_item").not(":first").hide();
+//- $(".wrapper .tab").on("click",function() {
+//- 	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+//- 	$(".tab_item").hide().eq($(this).index()).fadeIn()
+//- }).eq(0).addClass("active");
 
+//- CSS:
+//- .wrapper .active { color: red; }
 
+//- !!!!!!!!!!!!!!!!!!!стоят на сайте board 24!!!!!!!!!!!!!!!!!!
+//- 
+//- let tab = $(".board24_tab-js");  ---элемент триггер
+//- let tabitem = $(".board24_item-js"); ---элемент внутри триггера
 
+//- tabitem.fadeOut().removeClass("act");
+
+//- tab.on("click", function () {
+//- if (tabitem.eq($(this).index()).hasClass("act")){
+
+//- tabitem.eq($(this).index()).fadeOut(10).removeClass("act");
+
+//- }else{
+//-   tabitem.eq($(this).index()).fadeIn(10).addClass("act");
+//- }
+//- });
+//- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 //- https://html5css.ru/bootstrap4/bootstrap_ref_all_classes.php
