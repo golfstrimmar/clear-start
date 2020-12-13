@@ -17,10 +17,8 @@ import $ from 'jquery';
 
 
 import './js/common'
-
-
-import "./pug/modules/header/header";
-import './pug/modules/modal/modal'
+import "./js/header";
+import './js/modal'
 
 
 
