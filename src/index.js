@@ -1,6 +1,6 @@
 // эту строку вставлять во все файлы js
-import $ from 'jquery';
-
+import Jquery from "jquery";
+var $ = new Jquery();
 
 // картинки подключать через assets 
 // img(src = "assets/img/link-team.png", alt = "img")
