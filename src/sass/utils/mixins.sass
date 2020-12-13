@@ -1,0 +1,205 @@
+// миксины заводить в sass: 
+// @include jucb
+
+// ===========================
+// не миксинятся
+//   @media (min-width: 768px)
+//   @media (min-width: ) and (max-width: )
+//   @media ((max-width: )
+
+// lighten( , 50%)
+  // rgba(0, 0, 0, 0.95)
+  // =================================================
+ // если пустое значение  ---null
+
+// @include ts($fw,$fz,$lh,$cl)
+// @include ts-1 
+
+// @include bg()
+// @include absolute($width,$height,$top,$left,$right)
+
+// @include flex
+// @include fdc
+// @include center
+// @include jucc
+// @include jucs
+// @include juce
+// @include jucb
+// @include juca
+// @include alis 
+// @include alie
+// @include alic
+// @include alisc
+// @include alistretch
+// @include alib
+
+
+
+
+// ==============================================
+ 
+@mixin bg($color)
+  background-color: $color
+
+@mixin absolute( $width, $height, $top,  $left,  $right,$x,$y) 
+  position: absolute
+  width: $width
+  height: $height
+  top: $top
+  left: $left
+  right: $right
+  transform: translate($x,$y)
+  
+  // =============================================
+@mixin flex 
+  display: flex 
+  flex-wrap: wrap 
+@mixin fdc
+  display: flex 
+  flex-direction: column 
+@mixin center
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: center 
+  align-items: center 
+
+@mixin jucc
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: center
+@mixin jucs
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: flex-start
+@mixin juce
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: flex-end 
+@mixin jucb
+  display: flex
+  flex-wrap: wrap 
+  justify-content: space-between 
+@mixin juca 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: space-around 
+
+
+@mixin alis 
+  display: flex 
+  flex-wrap: wrap 
+  align-items: flex-start 
+@mixin alie 
+  display: flex 
+  flex-wrap: wrap 
+  align-items: flex-end 
+@mixin alic 
+  display: flex 
+  flex-wrap: wrap 
+  align-items: center 
+@mixin alistretch 
+  display: flex 
+  flex-wrap: wrap 
+  align-items: stretch 
+@mixin alib 
+  display: flex 
+  flex-wrap: wrap 
+  align-items: baseline 
+@mixin alisc 
+  display: flex 
+  flex-wrap: wrap 
+  align-self: center 
+
+
+
+.flex 
+  display: flex 
+  flex-wrap: wrap 
+.fdc 
+  display: flex 
+  flex-direction: column 
+.center 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: center 
+  align-items: center 
+.jucc 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: center 
+.jucs 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: flex-start 
+.juce 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: flex-end 
+.jucb 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: space-between 
+.juca 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: space-around 
+.alis 
+  display: flex 
+  flex-wrap: wrap 
+  align-items: flex-start 
+.alie 
+  display: flex 
+  flex-wrap: wrap 
+  align-items: flex-end 
+.alic 
+  display: flex 
+  flex-wrap: wrap 
+  align-items: center 
+.m2 
+  margin: 2px 0 0 0 !important 
+.m3 
+  margin: 3px 0 0 0 !important 
+.m4 
+  margin: 4px 0 0 0 !important 
+.m5 
+  margin: 5px 0 0 0 !important 
+.m6 
+  margin: 6px 0 0 0 !important 
+.m7 
+  margin: 7px 0 0 0 !important 
+.m8 
+  margin: 8px 0 0 0 !important 
+.m9 
+  margin: 9px 0 0 0 !important 
+.m10 
+  margin: 10px 0 0 0 !important 
+.m11 
+  margin: 11px 0 0 0 !important 
+.m12 
+  margin: 12px 0 0 0 !important 
+.m13 
+  margin: 13px 0 0 0 !important 
+.m14 
+  margin: 14px 0 0 0 !important 
+.m15 
+  margin: 15px 0 0 0 !important 
+.m16 
+  margin: 16px 0 0 0 !important 
+.m17 
+  margin: 17px 0 0 0 !important 
+.m18 
+  margin: 18px 0 0 0 !important 
+.m19 
+  margin: 19px 0 0 0 !important 
+.m20 
+  margin: 20px 0 0 0 !important 
+.m40 
+  margin: 40px 0 0 0 !important 
+.r 
+  background: red 
+.b 
+  background: blue 
+.g 
+  background: green 
+.border 
+  border: 1px solid #05A20E 

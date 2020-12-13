@@ -62,7 +62,7 @@ module.exports = {
       },
 
       {
-        test: /\.scss$/,
+        test: /\.sass$/,
         use: [
           "style-loader",
           MiniCssExtractPlugin.loader,
@@ -126,10 +126,7 @@ module.exports = {
       patterns: [
         { from: "src/img", to: "assets/img" },
         { from: "src/fonts", to: "assets/fonts" },
-    
       ],
     }),
-  
-   
   ],
 };  

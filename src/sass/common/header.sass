@@ -1,0 +1,144 @@
+.header
+  @include alic
+  padding: 0 40px
+  height: 80px
+  @include  bg( rgba(36, 36, 36, .8))
+  transition: all .5s ease-out
+  position: fixed
+  width: 100%
+  z-index: 1000
+  top: 0
+  left: 0
+  box-sizing: border-box
+
+  &__logo
+    width: 50px
+    height: 50px
+    @include  bg(#d24a4c)
+    border-radius: 10px
+  img
+    width: 100%
+    height: 100%
+
+  &__menu ul
+    @include jucb
+
+  &__menu
+    flex: 0 1 50%
+    margin: 0 0 0 auto
+
+  &__phone
+    margin: 0 0 0 50px
+    font-size: 14px
+    color: black
+
+.icon-close2
+  @include absolute(20px,20px,30px,null,40px,0%,0%)
+  font-size: 20px
+  display: none
+  color: white
+
+
+.content p
+  padding: 100px
+
+@media (min-width: 0px) and (max-width: 767px)
+  .icon-close2
+    display: flex
+    z-index: 1000
+
+  .header
+    padding: 0 40px
+    height: 80px
+
+    &__menu
+      margin: 0
+      width: 100vw
+      height: 100vh
+      position: fixed
+      top: 0
+      left: -100vw
+      padding: 80px 40px 0 40px
+      box-sizing: border-box
+      transition: all .3s ease-out
+      overflow: auto
+      text-align: right
+      &_overlay
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0%
+        left: 0%
+        @include bg(lighten(black, 5%))
+        opacity: .95
+        z-index: 1
+    &__menu_act
+      left: -40px
+
+    &__menu ul
+      @include fdc
+      @include alie
+
+    &__menu ul li
+      margin: 20px 0 0 0
+      z-index: 2
+      display: inline-flex
+
+    &__menu ul li:first-child
+      margin: 0 0 0 0
+
+    &__link
+      font-size: 30px
+      color: white
+
+    &__burger
+      margin: 0 0 0 auto
+      font-size: 20px
+
+    &__phone
+      display: none
+      margin: 40px 0 0 0
+      font-size: 20px
+      color: white
+
+    &__phone_act
+      position: relative
+      z-index: 2
+      display: inline-flex
+
+@media (min-width: 768px)
+  .header__burger
+    display: none
+
+.up_down_btn
+  position: fixed
+  background: -o-linear-gradient(357.31deg, #87CEFA 0, #4169E1 100%)
+  background: linear-gradient(92.69deg, #87CEEB, #755cdb)
+  right: 20px
+  bottom: 20px
+  padding: 7px
+  border-radius: 50%
+  cursor: pointer
+  display: none
+  z-index: 200
+  opacity: .5
+  transition: all 0.5s
+  color: white
+  font-size: 20px
+  font-weight: bold
+
+  &:hover
+    text-decoration: none
+    opacity: 1
+
+  &-show
+    display: block
+
+  &-disabled
+    pointer-events: none
+    cursor: default
+    opacity: 0
+
+  @media (min-width: 0px) and (max-width: 768px)
+    &
+      display: none

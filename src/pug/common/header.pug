@@ -1,28 +1,26 @@
+//- подключаем везде
 include ../utils/mixins
 
-header#header.header
-  .header__wrapper
-    .container
-      .header__body.row.no-gutters
-        .header__logo.mr-auto.ml-4.ml-lg-0  
-          img(src="assets/img/header/logo-dark.svg",alt="img") 
-        .header__cross.open
-          span.icon-bars-solid
-        nav#header-nav.header__nav.col-md-12.col-lg-9.header-nav
-          .header__logo.header__logo_white.ml-4
-            img(src="assets/img/header/logo-white.svg",alt="img")
-          .header__cross.close
-            span.icon-times-solid
-          ul.header-nav__body.row.no-gutters
-            li.header-nav__item
-              a.header-nav__link(href="#!") Home
-            li.header-nav__item
-              a.header-nav__link(href="#!") Portfolio
-            li.header-nav__item
-              a.header-nav__link(href="#!") About us
-            li.header-nav__item
-              a.header-nav__link(href="#!") What we do
-            li.header-nav__item
-              a.header-nav__link(href="#!") Work process
-            li.header-nav__item
-              a.header-nav__link(href="#!") Contact us
+//- сделал оверлей поверх меню на <768. по оверлею-закрытие. он прозрачный. z-index: 1. чтобы ссылки были поверх него им индекс немного больше. вообще все кликабельное-- сквезь него индексами.
+
+
+#header.header
+  .header__logo
+    img(src = "assets/img/img-41.jpg", alt = "img")
+  #header__menu.header__menu
+    .header__menu_overlay
+    ul
+      li
+        a.header__link(href='#!') portfolio
+      li
+        a.header__link(href='#!') about us
+      li
+        a.header__link(href='#!') team
+      li
+        a.header__link(href='#!') partners
+      li
+        a.header__link(href='#!') contacts
+    span.icon-close2
+  .header__phone наш телефон +309856565656
+  span.header__burger.icon-menu
+.up_down_btn(title='Наверх') ↑
