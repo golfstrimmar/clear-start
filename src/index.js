@@ -16,11 +16,17 @@ import $ from 'jquery';
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.css'
 
 
-import './js/common'// основной файл js
-import './js/header'
-import './js/modal.js'
+import './js/common'
 
 
+import "./pug/modules/header/header";
+import './pug/modules/modal/modal'
+
+
+
+
+
+// slick;
 import "slick-carousel";
 // import "./js/slick.js";  <-- на всякий случай
 import "./js/mySlick.js";
