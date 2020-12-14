@@ -1,8 +1,6 @@
 .header
-  @include alic
   padding: 0 40px
-  height: 80px
-  @include  bg( rgba(36, 36, 36, .8))
+  @include  bg( #F5F5F5)
   transition: all .5s ease-out
   position: fixed
   width: 100%
@@ -10,51 +8,72 @@
   top: 0
   left: 0
   box-sizing: border-box
-
-  &__logo
-    width: 50px
-    height: 50px
-    @include  bg(#d24a4c)
-    border-radius: 10px
-  img
-    width: 100%
+  height: 70px
+  &__body
+    @include alic
     height: 100%
 
-  &__menu ul
-    @include jucb
+  &__logo
+    max-width: 260px
+    width: calc(150px + (260-150)*((100vw-320px)/(1440-320)))
+    height: 32px
+    @include  bg(#d24a4c)
+    border-radius: 10px
+    img
+      width: 100%
+      height: 100%
 
   &__menu
-    flex: 0 1 50%
-    margin: 0 0 0 auto
+    flex: 0 1 34%
+    margin: 0 30px 0 auto
+    @include alic
+    border: 1px solid red
+  
+  &__menu ul
+    @include jucb
+    width: 100%
+    height: 100%
+    @include  bg(#d24a4c)
+  &__link
 
-  &__phone
-    margin: 0 0 0 50px
+    @include  font-family(Balsamiq Sans,300,18px,22px,#032E4A)
+  &__search
     font-size: 14px
     color: black
+    flex: 0 1 245px
+    height: 31px
+    @include jucb
+    position: relative
+    input
+      border-radius: 38px
+    .icon-Vector
+      transition: all 0.3s ease-in-out
+      @include absolute( 16px, 16px, 50%, null, 10px,0,-50%)
+      &:hover
+        cursor: pointer
+  &__phone-link
+    @include  font-family(Anton,600,18px,22px,#032E4A)
+    font-size: calc(12px + (18-12)*((100vw-320px)/(1440-320)))
+    letter-spacing: calc(2px + (1-2)*((100vw-320px)/(1440-320)))
+    margin: 0 30px 0 0
+    @include center
 
 .icon-close2
   @include absolute(20px,20px,30px,null,40px,0%,0%)
   font-size: 20px
   display: none
   color: white
-
-
-.content p
-  padding: 100px
-
-@media (min-width: 0px) and (max-width: 767px)
+// --------------------------------------------------------------------------
+@media (min-width: 0px) and (max-width: 1145px)
   .icon-close2
     display: flex
     z-index: 1000
-
   .header
     padding: 0 40px
-    height: 80px
-
     &__menu
       margin: 0
       width: 100vw
-      height: 100vh
+      min-height: 100vh
       position: fixed
       top: 0
       left: -100vw
@@ -63,6 +82,7 @@
       transition: all .3s ease-out
       overflow: auto
       text-align: right
+      @include fdc
       &_overlay
         position: absolute
         width: 100%
@@ -74,71 +94,82 @@
         z-index: 1
     &__menu_act
       left: -40px
-
     &__menu ul
       @include fdc
       @include alie
-
     &__menu ul li
       margin: 20px 0 0 0
       z-index: 2
       display: inline-flex
-
     &__menu ul li:first-child
       margin: 0 0 0 0
-
     &__link
       font-size: 30px
       color: white
-
     &__burger
       margin: 0 0 0 auto
       font-size: 20px
-
-    &__phone
+    &__phone-link, &__search
       display: none
-      margin: 40px 0 0 0
       font-size: 20px
       color: white
-
+      margin: 40px 0 0 auto
+    &__phone-link
+      font-size: calc(12px + (18-12)*((100vw-200px)/(1145-200)))
+    &__search
+      margin: 40px 0 0 auto
+      flex: 0 1 auto
+      width: calc(160px + (200-160)*((100vw-200px)/(320-200)))
+      height: 30px
+      input
+        width: calc(160px + (200-160)*((100vw-200px)/(320-200)))
+      i
+        font-size: 16px
     &__phone_act
       position: relative
       z-index: 2
-      display: inline-flex
-
-@media (min-width: 768px)
+      display: flex
+      
+@media (min-width: 1145px)
   .header__burger
     display: none
+  .header
+    &__menu
+      height: 100%
+    &__link
+      @include center
+      margin: auto!important
+      position: relative
+      &:after
+        content: ""
+        background-color: #1DE9B6
+        @include  absolute( 100%, 3px, -2px,0, null,0,2px)
+        z-index: 2
+        opacity: 0
+        transition: all 0.2s ease-in-out
+      &:hover
+        color: #40C4FF
+        &:after
+          opacity: 1
+          transform: translate(0, 0px)
+      &:active
+        transition: all 0.2s ease-in-out
+        @include bg(#3D5AFE)
+        color: #80D8FF
+        box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12)
 
-.up_down_btn
-  position: fixed
-  background: -o-linear-gradient(357.31deg, #87CEFA 0, #4169E1 100%)
-  background: linear-gradient(92.69deg, #87CEEB, #755cdb)
-  right: 20px
-  bottom: 20px
-  padding: 7px
-  border-radius: 50%
-  cursor: pointer
-  display: none
-  z-index: 200
-  opacity: .5
-  transition: all 0.5s
-  color: white
-  font-size: 20px
-  font-weight: bold
 
-  &:hover
-    text-decoration: none
-    opacity: 1
 
-  &-show
-    display: block
 
-  &-disabled
-    pointer-events: none
-    cursor: default
-    opacity: 0
 
-  @media (min-width: 0px) and (max-width: 768px)
-    &
-      display: none
+
+
+
+
+
+
+
+
+
+
+

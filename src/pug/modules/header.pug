@@ -5,22 +5,25 @@ include ../utils/mixins
 
 
 #header.header
-  .header__logo
-    img(src = "assets/img/img-41.jpg", alt = "img")
-  #header__menu.header__menu
-    .header__menu_overlay
-    ul
-      li
-        a.header__link(href='#!') portfolio
-      li
-        a.header__link(href='#!') about us
-      li
-        a.header__link(href='#!') team
-      li
-        a.header__link(href='#!') partners
-      li
-        a.header__link(href='#!') contacts
-    span.icon-close2
-  .header__phone наш телефон +309856565656
-  span.header__burger.icon-menu
+  .header__body.container
+    .header__logo
+      img(src = "assets/img/main-logo.svg", alt = "img")
+    #header__menu.header__menu
+      .header__menu_overlay
+      ul
+        li
+          a.header__link(href='#!') About
+        li
+          a.header__link(href='#!') Services 
+        li
+          a.header__link(href='#!') Price list
+        li
+          a.header__link(href='#!') Contacts 
+
+      span.icon-close2
+    a(href="#!").header__phone-link +7(495) 726-55-80
+    form.header__search
+      input(type="text" name="search" placeholder="Поиск")
+      i.icon-Vector
+    span.header__burger.icon-menu
 .up_down_btn(title='Наверх') ↑

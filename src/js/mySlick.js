@@ -1,5 +1,4 @@
-import Jquery from "jquery";
-var $ = new Jquery();
+import $ from "jquery";
 
 $(Document).ready(function () {
   $(".slider-test-js").slick({

@@ -1,4 +1,95 @@
-﻿важно что шрифты работают так:
+﻿=========== flex
+например три блока. их нужно сделать в пропорции 1/3/3. но их ширина в сумме не 100%
+тогда 
+
+flex: 0 0 10%
+flex: 0 0 30%
+flex: 0 0 30%
+
+это камни
+
+если внутри нет большого слова, которое распирает больше чем 10% они будут уменьшаться в этой пропорции до ширины максимального слова но так и не перейдут на новую строку.
+потом блок не уменьшается а переходит на другую строку. 
+если есть внутри большое слово и все это не работает. нао ставить тогда overflow: hidden
+или overflow: scroll. лучше сразу overflow: scroll
+
+стоит тоько сделать так, то блок полностью займет свободное пространство-- в данном случае 40%. он стал пружиной остальные блоки меньше 30% не станут
+flex: 1 0 10%
+flex: 0 0 30%
+flex: 0 0 30%
+ 
+это хорошо когда нужно сделать один блок из трех стретчевым.
+
+============================    центровка вместо @include center  (кода меньше!)
+.parent
+  display: flex               < --
+  height: 300px
+  border: 1px solid red
+
+.child
+  flex: 0 1 20%
+  margin: auto                <---
+  border: 1px solid red
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+// миксины заводить в sass: 
+ @include jucb
+
+ ===========================
+ не миксинятся
+   @media (min-width: 768px)
+   @media (min-width: ) and (max-width: )
+   @media (max-width: )
+
+//-- дает прозрачность--->  rgba(0, 0, 0, 0.95)
+//-- просто высветляет ---> lighten( , 50%)
+
+ всегда займет 1/3
+ flex: 1 1 33.333
+
+
+=========== адаптивное свойство
+ padding: 0 calc(20px + (50-20)*((100vw-320px)/(1200-320))) 0
+ будет работать от 1200 до 320
+ container: max-width: 1200px
+ минимальное значение окна  --- 320
+   максимальное значение окна  --- 1200
+ минимальный paadding --20
+   максимальный  -- 50
+
+==========================
+ если пустое значение  ---  null
+ @include ts($fw,$fz,$lh,$cl)
+ @include ts-1
+ @include bg()
+ @include absolute( $width, $height, $top,  $left,  $right,$x,$y) 
+ @include flex
+ @include fdc
+ @include center
+ @include jucc
+ @include jucs
+ @include juce
+ @include jucb
+ @include juca
+ @include alis 
+ @include alie
+ @include alic
+ @include alisc
+ @include alistretch
+ @include alib
+
+
+
+
+
+
+
+
+
+важно что шрифты работают так:
 подключение 
 
 @font-face {
@@ -34,3 +125,27 @@ font-stretch: normal;
 }
 ------------изображения так
    img(src="assets/img/buscet/buscet-1.png",alt="") 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==SASS======SASS======SASS======SASS======SASS======SASS======SASS======SASS======SASS======SASS======SASS======SASS======SASS====
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+.hoverable {.special & {}}======= класс меняет свойтва в зависимости от родителя (не работает)
+
+%prominent
+@extend %prominent;  --добавляет свойства без доьавления класса prominent
+
+@extend .prominent; ---добавит все свойства класса .prominent  все-таки потянется в конечный файл css 
+color: lighten($color_success, 50%)
+
+.hoverable {  &.special  {}}  === .hoverable  .special
+
+$color_success: cyan
+color: lighten($color_success, 50%)
+
+@mixin box-shadow
+  box-shadow: 0px 5px 14px 4px rgba(0, 0, 0, 0.5)
+  
+@include box-shadow

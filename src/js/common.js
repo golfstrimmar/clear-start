@@ -1,9 +1,9 @@
 //-- этот import нужно подключать в каждый файл, чтобы jquery работала
-import Jquery from "jquery";
-var $ = new Jquery();
+import $ from "jquery";
 // ------------------------------------------------
 
-$(Document).ready(function () {
+$(document).ready(function () {
+
   function ibg() {
     $.each($(".ibg"), function (index, val) {
       if ($(this).find("img").length > 0) {
@@ -16,4 +16,5 @@ $(Document).ready(function () {
   }
 
   ibg();
+  
 });

@@ -1,22 +1,37 @@
 // миксины заводить в sass: 
 // @include jucb
 
+
+
+// Anton
+// Permanent Marker
+// Balsamiq Sans
+// box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12)
+// box-shadow: 0px 5px 14px 4px rgba(0, 0, 0, 0.5)
 // ===========================
 // не миксинятся
 //   @media (min-width: 768px)
 //   @media (min-width: ) and (max-width: )
-//   @media ((max-width: )
+//   @media (max-width: )
 
-// lighten( , 50%)
-  // rgba(0, 0, 0, 0.95)
-  // =================================================
- // если пустое значение  ---null
 
-// @include ts($fw,$fz,$lh,$cl)
-// @include ts-1 
+// ---------------------------------------------
 
+// @include  font-family($family,$waight,$size,$line-height,$color)
 // @include bg()
-// @include absolute($width,$height,$top,$left,$right)
+// calc(20px + (50-20)*((100vw-320px)/(1440-320))) 
+// @include absolute( auto, auto, 50%,  10px, null,0,-50%)
+// @include absolute( $width, $height, $top,  $left,  $right,$x,$y) 
+// %prominent
+// @extend %prominent
+// -----------------------------------------------
+
+// размер макетного окна 1440
+// container -- max-width: 1170px
+// минимальное значение окна  --- 320
+//   максимальное значение окна  --- 1200
+// минимальный paadding --20
+//   максимальный  -- 50 
 
 // @include flex
 // @include fdc
@@ -33,11 +48,22 @@
 // @include alistretch
 // @include alib
 
+// lighten( , 50%)
+  // rgba(0, 0, 0, 0.95)
+
 
 
 
 // ==============================================
- 
+
+@mixin  font-family($family,$waight,$size,$line-height,$color)
+  font-family: $family
+  font-style: normal
+  font-weight: $waight
+  font-size: $size
+  line-height: $line-height
+  color: $color
+
 @mixin bg($color)
   background-color: $color
 

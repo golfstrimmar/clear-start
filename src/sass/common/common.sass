@@ -15,18 +15,23 @@
   outline: 1px solid #4164ff
   background: #BBDEFB
   width: 80%
+  // width: 100%
+  max-width: 1170px
   margin: 0 auto 
   position: relative
   z-index: 2
+  display: flex
+  flex-flow: row wrap
 
   @media (min-width: 768px) and (max-width: 1770px)
-    width: 80%
+    // width: 80%
+    width: 100%
     padding: 0 0 0 0	
 
   @media screen and (max-width: 767px)
     width: 100%
-    padding-left: 15px
-    padding-right: 15px
+    // padding-left: 15px
+    // padding-right: 15px
 
 .ibg
   background-repeat: no-repeat
@@ -59,18 +64,55 @@ a
     cursor: pointer
     z-index: 5
 
-.img-svg
-  width: 30px
-  height: 30px
+input
+  @include absolute( 245px,30px,0,0,null,0,0)
+  background: #FFFFFF
+  transition: all 0.3s ease-in-out
+  padding: 0 0 0 10px
+  &::placeholder
+    transition: all 0.3s ease-in-out
+  &:focus 
+    &::placeholder
+      opacity: 0
+      z-index: -1
 
 .lock
   overflow: hidden
-
-.icon
-  width: 30px
-  height: 30px
 
 .active
   opacity: 1
   visibility: visible
   display: block
+
+.up_down_btn
+  position: fixed
+  background: -o-linear-gradient(357.31deg, #87CEFA 0, #4169E1 100%)
+  background: linear-gradient(92.69deg, #87CEEB, #755cdb)
+  right: 20px
+  bottom: 20px
+  padding: 7px
+  border-radius: 50%
+  cursor: pointer
+  display: none
+  z-index: 200
+  opacity: .5
+  transition: all 0.5s
+  color: white
+  font-size: 20px
+  font-weight: bold
+
+  &:hover
+    text-decoration: none
+    opacity: 1
+
+  &-show
+    display: block
+
+  &-disabled
+    pointer-events: none
+    cursor: default
+    opacity: 0
+
+  @media (min-width: 0px) and (max-width: 768px)
+    &
+      display: none

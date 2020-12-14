@@ -1,0 +1,242 @@
+
+%chip-prop
+  width: 100%
+  height: 100%
+  @include center
+  background: #E3F7F8
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12)
+  border-radius: 28px
+
+%chip__title
+  font-family: Balsamiq Sans
+  font-style: normal
+  font-weight: normal
+  font-size: 15px
+  line-height: 20px
+  color: #032E4A
+
+%procents
+  width: 100%
+  height: 100%
+
+
+// ==========================================
+
+.chip
+  position: relative
+  width: 247px
+  height: 57px
+  @extend %chip-prop
+  &__title
+    @extend %chip__title
+
+.chip-button
+  &__body
+    @extend %procents
+  p
+    @extend %procents
+  button
+    @extend %chip-prop
+    @extend %chip__title
+
+.bot
+  @extend %procents
+  @include jucs
+  @include alic
+  min-width: 212px
+  display: inline-flex
+  border: 1px solid red	
+  &__icon
+    font-size: 30px
+    margin: 0 20px 0 0
+  &__texts
+    
+  &__text
+    @extend %chip__title
+
+.card
+  min-width: 290px
+  // width: 290px
+  min-height: 386px
+  // height: 386px
+  @extend %procents
+  @include fdc
+  padding: 45px 20px 50px 20px
+  background: #E3F7F8
+  box-shadow: 0px 0px 15px rgba(28, 41, 83, 0.15)
+  border-radius: 40px	
+  &__img
+    width: 80px
+    height: 80px
+    font-size: 80px
+  &__title
+    @extend %chip__title
+    padding: 33px 0 0 0	
+  &__text
+    @extend %chip__title
+    font-size: 12px
+    padding: 20px 0 0 0	
+
+.list
+  @include fdc
+  &__title
+    @extend %chip__title
+  &__text
+    @extend %chip__title
+    font-size: 12px
+    padding: 20px 0 0 0	
+
+.connect__form
+  @extend %procents
+
+
+.connect__form-item
+  position: relative
+  margin-bottom: 40px
+  min-height: 30px
+  background-color: #9e9e9e
+
+.connect__form-item label
+  position: absolute
+  top: 0
+  left: 0
+  transition: 0.3s
+  transform: translateY(0)
+  pointer-events: none
+  color: #0d0d0d
+  width: 100%
+  font-family: "Montserrat", sans-serif
+  font-size: 19px
+  line-height: 25px
+  font-weight: 500
+
+.connect__form-item input, .connect__form-item textarea
+  width: 100%
+  outline: none
+  border: 1px solid transparent
+  background-color: transparent
+  background-repeat: no-repeat
+  background-position: 100% 5px
+  border-bottom: 1px solid #d8d8d8
+  padding-bottom: 17px
+  resize: none
+  font-family: "Montserrat", sans-serif
+  font-size: 19px
+  line-height: 25px
+  font-weight: 500
+
+.connect__form-item input:focus + label,
+.connect__form-item textarea:focus + label,
+.connect__form-item input:not(:placeholder-shown) + label,
+.connect__form-item textarea:not(:placeholder-shown) + label,
+.connect__form-item input:-webkit-autofill + label,
+.connect__form-item textarea:-webkit-autofill + label
+  transform: translateY(-34px)
+
+/* ------------------------
+.connect__form-item input:focus + label
+  transform: translateY(-34px)
+
+.connect__form-item textarea:focus + label
+  transform: translateY(-34px)
+
+.connect__form-item input:not(:placeholder-shown) + label
+  transform: translateY(-34px)
+
+.connect__form-item textarea:not(:placeholder-shown) + label
+  transform: translateY(-34px)
+
+.connect__form-item input:-webkit-autofill + label
+  transform: translateY(-34px)
+
+.connect__form-item textarea:-webkit-autofill + label
+  transform: translateY(-34px)
+
+/* --------------------------------------
+
+.connect__form-item input::-webkit-input-placeholder, .connect__form-item textarea::-webkit-input-placeholder
+  color: transparent
+
+.connect__form-item input::-moz-placeholder, .connect__form-item textarea::-moz-placeholder
+  color: transparent
+
+.connect__form-item input:-ms-input-placeholder, .connect__form-item textarea:-ms-input-placeholder
+  color: transparent
+
+.connect__form-item input:-moz-placeholder, .connect__form-item textarea:-moz-placeholder
+  color: transparent
+
+.connect__form-item input:not(:placeholder-shown):invalid, .connect__form-item textarea:not(:placeholder-shown):invalid
+  color: #fa333c
+  border-bottom: 1px solid #fa333c
+  background-image: url("/assets/img/warning.svg")
+  font-family: "Montserrat", sans-serif
+  font-size: 15px
+  font-weight: 400
+
+.connect__file-add
+  // margin-top: 92px
+  padding-bottom: 15px
+  border-bottom: 1px solid #d8d8d8
+  cursor: pointer
+  height: 33px
+
+.connect__file-add input
+  opacity: 0
+
+.connect__file-add label
+  top: 33px
+
+@media (max-width: 767px)
+  .form__submit-button button
+    width: 100%
+
+@media (max-width: 450px)
+  .btn, .btn__inner
+    width: 100%
+
+.custom-file
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  flex-direction: row
+  height: 33px
+
+.custom-file input
+  /* opacity: 0;
+  /* visibility: hidden;
+  position: absolute
+  left: 0
+  pointer-events: none
+  font-family: "Montserrat", sans-serif
+  font-size: 15px
+  line-height: 25px
+  font-weight: 400
+  z-index: 5
+
+.custom-file label
+  transform: translateY(0) !important
+  font-family: "Montserrat", sans-serif
+  font-size: 19px
+  line-height: 25px
+  font-weight: 400
+
+.custom-file__lb
+  display: inline-block
+  width: 100%
+  height: 24px
+  border: none
+  position: relative
+  margin: 0
+
+.custom-file__lb.close
+  width: 24px
+
+.custom-file__lb.close:before
+  transform: rotate(405deg)
+
+.custom-file__lb .bg
+  width: 27px
+  height: 27px
+  left: 100%
+  transform: translate(-120%)

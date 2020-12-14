@@ -1,3 +1,5 @@
+
+  
 .test
   background: $main-back
   &__wrapper 
@@ -7,26 +9,35 @@
   
   &__body 
     width: 100%
-    height: 100%
+    min-height: 100px
     position: relative
-    @include juca
-
-  h1
-    flex: 0 1 33.333%
+    @include jucb
+      
+  &__title
+    flex: 0 1 10%
     border: 1px solid red
-    @include jucc
-    @include ts-1
-  
+    @include fdc
+    @include alic
+    @include jucs
+    
+
   &__discription 
-    flex: 0 1 33.333%
-    @include ts(600,40px,17px,#4527A0)
+    flex: 0 1 30%
+    border: 1px solid red
+    @include jucc
+    p
+      border: 1px solid black
+  &__plaza
+    flex: 0 1 30%
+    // overflow: scroll
     border: 1px solid red
     @include jucc
 
-  &__plaza
-    flex: 0 1 33.333%
-    border: 1px solid red
-    @include jucc
+@media (max-width: 1200px)
+  .test__discription
+    padding: 0 calc(10px + (50-10)*((100vw-100px)/(1200-100))) 0
+    p
+      font-size: calc(30px + (50-30)*((100vw-320px)/(1200-320)))
 
 .test-plaza
   &__body
@@ -39,7 +50,6 @@
     padding: 0 0 65%
 
   &__item
-    @include ts(500,40px,17px,green)
     z-index: 2
 
 

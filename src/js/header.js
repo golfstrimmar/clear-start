@@ -3,31 +3,40 @@
 // ------------------------------------------------
 
 
-
-
 let wrapper = document.querySelector(".wrapper");
-let header = document.querySelector(".header");
+let header = document.querySelector(".header__body");
 let headerOverlay = document.querySelector(".header__menu_overlay");
 let burger = document.querySelector(".header__burger");
 let close2 = document.querySelector(".icon-close2");
 let phone = document.querySelector(".header__phone");
 let body = document.body;
 let menu = document.querySelector("#header__menu");
-
+let phoneLink = document.querySelector(".header__phone-link");
+let headerSearch = document.querySelector(".header__search");
 
 wrapper.addEventListener("click", function (event) {
   
   
   if (event.target == burger) {
     menu.classList.add("header__menu_act");
-    phone.classList.add("header__phone_act");
-    menu.appendChild(phone);
+    phoneLink.classList.add("header__phone_act");
+    headerSearch.classList.add("header__phone_act");
+    menu.appendChild(phoneLink);
+    menu.appendChild(headerSearch);
+
     body.style.overflow = "hidden";
   } else {
-  if (headerOverlay !== event.target) {
+  if (
+    headerOverlay !== event.target &&
+    document.querySelector("input") !== event.target &&
+    document.querySelector("span") !== event.target &&
+    document.querySelector(".icon-Vector") !== event.target
+  ) {
     menu.classList.remove("header__menu_act");
-    header.appendChild(phone);
-    phone.classList.remove("header__phone_act");
+    header.appendChild(phoneLink);
+    header.appendChild(headerSearch);
+    phoneLink.classList.remove("header__phone_act");
+    headerSearch.classList.remove("header__phone_act");
     body.style.overflow = "visible";
   }
   }
@@ -35,13 +44,15 @@ wrapper.addEventListener("click", function (event) {
 
 
 window.addEventListener("resize", function (event) {
-  if (document.documentElement.clientWidth > 768) {
+  if (document.documentElement.clientWidth > 1145) {
 
     if (menu.classList.contains("header__menu_act")) {
-      menu.classList.remove("header__menu_act");
-      header.appendChild(phone);
-      phone.classList.remove("header__phone_act");
-      body.style.overflow = "visible";
+        menu.classList.remove("header__menu_act");
+        header.appendChild(phoneLink);
+        header.appendChild(headerSearch);
+        phoneLink.classList.remove("header__phone_act");
+        headerSearch.classList.remove("header__phone_act");
+        body.style.overflow = "visible";
     }
 
   } 

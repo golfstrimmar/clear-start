@@ -1,0 +1,37 @@
+.chip
+  .chip__title chip
+
+.chip-button.chip
+  form.chip-button__body
+    p
+      button(type="button") Кнопка с текстом
+
+.bot
+  span.bot__icon.icon-emoji
+  .bot__texts
+    .bot__text Москва, Ломоносовский 
+    .bot__text проспект, 29 к
+.card
+  span.icon-emoji.card__img
+  .card__title какой-то контент
+  .card__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam neque debitis totam corporis fugiat nemo consectetur. Incidunt aliquvoluptates perferendis maxime, aut amet nulla impedit rerum beatae. Voluptate, venia
+.list
+  .list__title  Лист заголовок
+  .list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aliquid odio ducimus ex! Neque recusandae nulla fugiat sapiendignissimos maiores porro quae cumque earum maxime sint omnis harum, iusto re
+form.connect__form
+  .connect__form-item
+    input#name(type='text' required='' placeholder=' Denzel Washington')
+    label.red-first-letter(for='name') Введите Ваше имя
+  .connect__form-item
+    input#email(type='email' required='' placeholder=' thebestmail@mail.com')
+    label.red-first-letter(for='email') Ведите Ваш e-mail
+  .connect__form-item
+    textarea#message(type='text' required='' placeholder=' Your awesome message'      cols=' 40' rows='6')
+    label.red-first-letter(for='message') Напишите Ваше сообщение
+  .connect__form-item.connect__file-add
+    input#customFile.custom-file-input(type='file')
+    label.name__text.red-first-letter(for='customFile') Добавьте файлы
+    .custom-file
+  .form__submit-button.chip-button.chip
+    button#submit-button.btn.btn__red.btn__hover-grey.btn-6(type='submit')
+      span  Отправить 
