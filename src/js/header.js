@@ -60,10 +60,16 @@ window.addEventListener("resize", function (event) {
 
 // ----- header меняется в размерах и цвете
    window.addEventListener("scroll", function (event) {
-     if (window.pageYOffset > 50) {
-       header.style.cssText = `height: 60px;	background-color: rgba(36, 36, 36, 0.8);`;
+     if (window.pageYOffset > 150) {
+       header.style.cssText = `height: 55px;	`;
+       document.querySelector(
+         ".header"
+       ).style.cssText = `background-color: rgba(0,0,0, 0.6);`;
      } else {
-       header.style.cssText = `height: 80px;background-color: rgba(36, 36, 36, 0.2);`;
+       header.style.cssText = `height: 70px;`;
+        document.querySelector(
+          ".header"
+        ).style.cssText = `background-color: #F5F5F5;`;
      }
    });
 
