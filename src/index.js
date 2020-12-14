@@ -1,17 +1,5 @@
 // эту строку вставлять во все файлы js
 import $ from 'jquery';
-
-
-// картинки подключать через assets 
-// img(src = "assets/img/link-team.png", alt = "img")
-
-// $(window).on("load", function () {});
-
-
-
-
-// ==============================================
-
 // import "mixitup";
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.css'
 
@@ -20,8 +8,6 @@ import './js/common'
 import "./js/header";
 import './js/modal'
 import './js/animals'
-
-
 
 
 
